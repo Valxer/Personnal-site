@@ -31,7 +31,7 @@
           <h1 class="text-description" text-2xl mt-10px mx-auto>
             I am Kevin Le Van Phung
           </h1>
-          <div class="wrappper" text-2xl relative>
+          <div class="wrappper" text-2xl relative w-300px h-32px>
             <div class="typing typing1">
               A Web Developer
             </div>
