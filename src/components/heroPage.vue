@@ -5,6 +5,7 @@
 <template>
   <section class="hero-section z-1" relative w-screen h-screen flex justify-center items-center>
     <div class="color-overlay -z-1" absolute h-screen w-screen />
+    <router-view />
     <Navbar />
     <div class="hello w-3/4" flex flex-col items-center>
       <div class="hello_main w-1/1" h-250px flex flex-col justify-between>
