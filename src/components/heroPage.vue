@@ -55,7 +55,7 @@
 
 <style scoped>
 .hero-section {
-  background-image: url("../../public/LandingBackground.jpg");
+  background-image: url("/LandingBackground.jpg");
   background-size: cover;
 }
 .color-overlay {
@@ -63,7 +63,7 @@
   background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 5%, rgba(0,0,0,0) 100%);
 }
 .site-logo {
-  background-image: url("../../public/logo.svg");
+  background-image: url("/logo.svg");
   background-size: cover;
 }
 .text-title {
