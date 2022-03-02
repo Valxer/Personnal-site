@@ -91,9 +91,20 @@
 }
 .typing {
   position: absolute;
+  width: 0;
   white-space: nowrap;
   overflow: hidden;
   border-right: none;
+  text-align: left;
+}
+.typing1 {
+  animation: typing1 12s steps(15) infinite , blink .5s step-end infinite alternate;
+}
+.typing2 {
+  animation: typing2 12s steps(26) infinite , blink .5s step-end infinite alternate;
+}
+.typing3 {
+  animation: typing3 12s steps(22) infinite , blink .5s step-end infinite alternate;
 }
 button {
   border: 2px solid white;
@@ -101,4 +112,91 @@ button {
   padding-top: 5px;
   padding-bottom: 5px;
 }
+
+@keyframes typing1 {
+  0% {
+    border-right: 3px solid;
+    width: 0;
+  }
+  0.5% {
+    border-right: 3px solid;
+    width: 0;
+  }
+  16.5% {
+    width: 12ch;
+    border-right: 3px solid;
+  }
+  22% {
+    width: 12ch;
+    border-right: 3px solid;
+  }
+  30% {
+    width: 0;
+    border-right: 3px solid;
+  }
+  33% {
+    border-right: none;
+  }
+}
+@keyframes typing2 {
+  0% {
+    width: 0;
+  }
+  30% {
+    border-right: none;
+  }
+  36% {
+    border-right: 3px solid;
+    width: 0;
+  }
+  49.5% {
+    border-right: 3px solid;
+    width: 18.5ch;
+  }
+  55% {
+    border-right: 3px solid;
+    width: 18.5ch;
+  }
+  63% {
+    border-right: 3px solid;
+    width: 0;
+  }
+  66% {
+    border-right: none;
+  }
+}
+@keyframes typing3 {
+  0% {
+    width: 0;
+  }
+  63% {
+    border-right: none;
+  }
+  69% {
+    border-right: 3px solid;
+    width: 0;
+  }
+  82.5%  {
+    border-right: 3px solid;
+    width: 16ch;
+  }
+  88.5% {
+    border-right: 3px solid;
+    width: 16ch;
+  }
+  97% {
+    border-right: 3px solid;
+    width: 0;
+  }
+  100% {
+    border-right: none;
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent
+  }
+}
+
 </style>
