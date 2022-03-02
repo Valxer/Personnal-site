@@ -4,9 +4,9 @@
 
 declare module 'vue' {
   export interface GlobalComponents {
-    Counter: typeof import('./components/Counter.vue')['default']
-    Footer: typeof import('./components/Footer.vue')['default']
-    README: typeof import('./components/README.md')['default']
+    Footer: typeof import('./src/components/Footer.vue')['default']
+    HeroPage: typeof import('./src/components/heroPage.vue')['default']
+    Navbar: typeof import('./src/components/Navbar.vue')['default']
   }
 }
 
