@@ -3,7 +3,7 @@
 
 <template>
   <router-view />
-  <heroPage />
+  <HeroPage />
 </template>
 
 <style>
