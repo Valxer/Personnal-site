@@ -85,14 +85,13 @@ function aboutScroll() {
   border-right: 3px solid;
   text-align: left;
   &1 {
-    animation: blink .5s step-end infinite alternate;
-    animation: typing1 12s steps(15) 1.5s infinite ;
+    animation: typing1 12s steps(20) 1.5s infinite, blink .5s step-end infinite alternate ;
   }
   &2 {
-    animation: typing2 12s steps(26) 1.5s infinite , blink .5s step-end infinite alternate;
+    animation: typing2 12s steps(20) 1.5s infinite , blink .5s step-end infinite alternate;
   }
   &3 {
-    animation: typing3 12s steps(22) 1.5s infinite , blink .5s step-end infinite alternate;
+    animation: typing3 12s steps(20) 1.5s infinite , blink .5s step-end infinite alternate;
   }
 }
 button {
@@ -103,7 +102,7 @@ button {
 }
 .wrapper {
     width: 0;
-    animation: typing 12s steps(15) 1.5s infinite;
+    animation: typing 12s steps(20) 1.5s infinite;
   }
 
 @media screen and (min-width: 1024px){
