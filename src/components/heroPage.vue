@@ -1,5 +1,10 @@
 <script setup lang="ts">
 
+function aboutScroll() {
+  const about = document.querySelector('.about-section')
+  about?.scrollIntoView()
+}
+
 </script>
 
 <template>
@@ -16,7 +21,7 @@
           <h1 class="text-description" text-2xl mt-10px mx-auto>
             I am Kevin Le Van Phung
           </h1>
-          <div class="wrappper" text-2xl relative w-300px h-32px>
+          <div class="wrapper" text-2xl relative w-300px h-32px>
             <div class="typing typing1">
               A Web Developer
             </div>
@@ -30,7 +35,9 @@
         </div>
         <div class="hello_main-links" h-90px flex flex-col justify-between items-center>
           <button>MY PROJECTS</button>
-          <button>MORE ABOUT ME</button>
+          <button @click="aboutScroll()">
+            MORE ABOUT ME
+          </button>
         </div>
       </div>
       <ScrollButton />
@@ -93,6 +100,66 @@ button {
   width: 175px;
   padding-top: 5px;
   padding-bottom: 5px;
+}
+.wrapper {
+    width: 0;
+    animation: typing 12s steps(15) 1.5s infinite;
+  }
+
+@media screen and (min-width: 1024px){
+  .text-title {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
+  .text-description, .wrapper {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+  }
+}
+
+@keyframes typing {
+  0% {
+    width: 0;
+  }
+  0.5% {
+    width: 0;
+  }
+  16.5% {
+    width: 12ch;
+  }
+  22% {
+    width: 12ch;
+  }
+  30% {
+    width: 0;
+  }
+  36% {
+    width: 0;
+  }
+  49.5% {
+    width: 18.5ch;
+  }
+  55% {
+    width: 18.5ch;
+  }
+  63% {
+    width: 0;
+  }
+  69% {
+    width: 0;
+  }
+  82.5%  {
+    width: 16ch;
+  }
+  88.5% {
+    width: 16ch;
+  }
+  97% {
+    width: 0;
+  }
+  100% {
+    width: 0;
+  }
 }
 
 @keyframes typing1 {
