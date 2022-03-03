@@ -7,6 +7,7 @@ declare module 'vue' {
     Footer: typeof import('./src/components/Footer.vue')['default']
     HeroPage: typeof import('./src/components/heroPage.vue')['default']
     Navbar: typeof import('./src/components/Navbar.vue')['default']
+    ScrollButton: typeof import('./src/components/ScrollButton.vue')['default']
   }
 }
 

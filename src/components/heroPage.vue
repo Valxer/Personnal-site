@@ -33,12 +33,7 @@
           <button>MORE ABOUT ME</button>
         </div>
       </div>
-      <div class="scroll" absolute bottom-5 flex flex-col items-center>
-        <p class="scroll-text" text-xs>
-          SCROLL DOWN
-        </p>
-        <span class="i-carbon-chevron-down" text-fuchsia-600 text-xl />
-      </div>
+      <ScrollButton />
     </div>
   </section>
 </template>
