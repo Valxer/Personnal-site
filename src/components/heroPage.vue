@@ -3,7 +3,7 @@
 </script>
 
 <template>
-  <section class="hero-section z-1" relative w-screen h-screen flex justify-center items-center>
+  <section class="hero-section z-1" relative w-screen h-screen flex justify-center items-center shadow-lg shadow-gray-500>
     <div class="color-overlay -z-1" absolute h-screen w-screen />
     <router-view />
     <Navbar />
