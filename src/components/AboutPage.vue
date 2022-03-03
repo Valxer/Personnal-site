@@ -30,8 +30,8 @@
             </p>
           </div>
         </div>
-        <div class="details__skills w-7/10" mb-40px>
-          <h3 class="details__skills-title" text-dark-700 font-600 text-xl mb-15px>
+        <div class="details__skills w-7/10">
+          <h3 class="details__skills-title" text-dark-700 font-600 text-xl mb-20px>
             My Skills
           </h3>
           <div class="skills" flex flex-wrap justify-center>
@@ -68,7 +68,7 @@
           </div>
         </div>
       </div>
-      <button class="contact" mb-50px px-30px py-10px border-2 border-fuchsia600 text-fuchsia600 text-lg font-semibold>
+      <button class="contact" mt-40px mb-50px px-30px py-10px border-2 border-fuchsia600 text-fuchsia600 text-lg font-semibold>
         CONTACT
       </button>
     </div>
@@ -96,5 +96,24 @@
     border-radius: 10px;
     background-color: rgba(153, 153, 153, 0.2);
     margin: 0 5px 10px 5px;
+}
+@media screen and (min-width: 1024px) {
+    .details {
+        margin-top: 15px;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 80%;
+        @media screen and (min-width:1350px) {
+                width: 60%
+            }
+        &__main {
+            width: 60%;
+            display: flex;
+            flex-direction: column;
+        }
+        &__skills {
+            width: 30%;
+        }
+    }
 }
 </style>
