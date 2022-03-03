@@ -91,11 +91,13 @@
     transform: translateX(-50%);
     border-radius: 5px;
 }
+.skills{
+  gap: 10px;
+}
 .skills__skill{
     padding: 5px 10px;
-    border-radius: 10px;
-    background-color: rgba(153, 153, 153, 0.2);
-    margin: 0 5px 10px 5px;
+    border-radius: 5px;
+    background-color: rgba(153, 153, 153, 0.3);
 }
 @media screen and (min-width: 1024px) {
     .details {
