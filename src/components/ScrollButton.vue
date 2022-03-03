@@ -1,6 +1,6 @@
 <script setup lang="ts">
 
-function scrolldown() {
+function aboutScroll() {
   const about = document.querySelector('.about-section')
   about?.scrollIntoView()
 }
@@ -8,7 +8,7 @@ function scrolldown() {
 </script>
 
 <template>
-  <div class="scroll" absolute bottom-5 flex flex-col items-center @click="scrolldown()">
+  <div class="scroll" absolute bottom-5 flex flex-col items-center @click="aboutScroll">
     <p class="scroll-text" text-xs>
       SCROLL DOWN
     </p>
