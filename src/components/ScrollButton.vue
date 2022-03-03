@@ -1,9 +1,14 @@
 <script setup lang="ts">
 
+function scrolldown() {
+  const pageHeight = window.innerHeight
+  window.scrollBy(0, pageHeight)
+}
+
 </script>
 
 <template>
-  <div class="scroll" absolute bottom-5 flex flex-col items-center>
+  <div class="scroll" absolute bottom-5 flex flex-col items-center @click="scrolldown()">
     <p class="scroll-text" text-xs>
       SCROLL DOWN
     </p>
