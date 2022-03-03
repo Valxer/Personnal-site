@@ -7,9 +7,13 @@
     <p class="scroll-text" text-xs>
       SCROLL DOWN
     </p>
-    <button class=" scroll-arrow i-carbon-chevron-down" text-fuchsia-600 text-xl />
+    <span class=" scroll-arrow i-carbon-chevron-down" text-fuchsia-600 text-xl />
   </div>
 </template>
 
-<style>
+<style scoped>
+.scroll:hover {
+    transform: scale(1.3);
+    transition: 300ms;
+}
 </style>

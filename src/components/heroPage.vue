@@ -10,7 +10,7 @@
     <div class="hello w-3/4" flex flex-col items-center>
       <div class="hello_main w-1/1" h-250px flex flex-col justify-between>
         <div class="hello_main-text" flex flex-col items-center>
-          <p class="text-title" relative text-fuchsia-400 font-medium>
+          <p class="text-title" relative text-fuchsia-500 font-medium>
             HELLO THERE
           </p>
           <h1 class="text-description" text-2xl mt-10px mx-auto>
