@@ -2,34 +2,39 @@
 </script>
 
 <template>
-  <section class="about-section" relative w-screen h-screen flex flex-col justify-center items-center text-true-gray600>
-    <div class="content h-8/10" flex flex-col justify-between items-center>
-      <h2 class="header" flex flex-col justify-between items-center>
-        <span class="header__title" relative text-fuchsia-500 text-lg font-semibold mb-10px>ABOUT ME</span>
-        <span class="header__text w-7/10" font-600>Get to know more about me, what I do and my current skills in terms of programming and technology</span>
+  <section class="about-section" relative w-screen flex flex-col justify-center items-center text-true-gray600>
+    <div class="content h-9/10" flex flex-col justify-start items-center mt-50px>
+      <h2 class="header" flex flex-col justify-between items-center mb-30px>
+        <span class="header__title" relative text-fuchsia-500 text-lg font-semibold text-center mb-15px>ABOUT ME</span>
+        <span class="header__text w-6/10" text-sm font-600 leading-tight>Get to know more about me and my current skills</span>
       </h2>
-      <div class="details">
-        <div class="details__main">
-          <h3 class="details__main-title">
+      <div class="details" w-full flex flex-col justify-between items-center text-left>
+        <div class="details__main w-7/10" mb-30px>
+          <h3 class="details__main-title" text-true-gray800 font-600 text-xl mb-15px>
             Hello !
           </h3>
-          <div class="details__main-details">
+          <div class="details__main-details" text-justify text-sm>
             <p class="details__main-details-para">
-              I'm
+              My name is Kevin Le Van Phung and I'm a passionate <strong>Web Developer</strong> with a preference towards
+              <strong>Frontend development</strong>.
             </p>
             <p class="details__main-details-para">
-              I'm working on
+              I love to be up-to-date about the tools I'm using especially my preferred framework : <strong>Vue</strong>.
             </p>
-            <p class="details__main-details-para">
-              I'm looking for
+            <p class="details__main-details-para" mt-10px>
+              I'm curently working on my portfolio in order to display my skills to any person interested in seeing what I'm capable of.
+            </p>
+            <p class="details__main-details-para" mt-10px>
+              I would love to hear from you. Whether it's a <strong>project</strong>, <strong>job</strong> opportunity,
+              helpful <strong>criticism</strong> about my work or just a chat. Fell free to <strong>contact</strong> me!
             </p>
           </div>
         </div>
-        <div class="details__skills">
-          <h3 class="details__skills-title">
+        <div class="details__skills w-7/10" mb-40px>
+          <h3 class="details__skills-title" text-dark-700 font-600 text-xl mb-15px>
             My Skills
           </h3>
-          <div class="skills">
+          <div class="skills" flex flex-wrap justify-center>
             <div class="skills__skill">
               HTML
             </div>
@@ -63,8 +68,10 @@
           </div>
         </div>
       </div>
+      <button class="contact" mb-50px px-30px py-10px border-2 border-fuchsia600 text-fuchsia600 text-lg font-semibold>
+        CONTACT
+      </button>
     </div>
-    <ScrollButton />
   </section>
 </template>
 
@@ -75,11 +82,19 @@
 .header__title::after {
     content: '';
     display: block;
-    width: 20px;
-    height: 1px;
+    width: 3rem;
+    height: 2px;
     background:rgb(192, 38, 211);
     position: absolute;
-    left:0;
-    top: 50%
+    left: 50%;
+    top: calc(100% + .2rem);
+    transform: translateX(-50%);
+    border-radius: 5px;
+}
+.skills__skill{
+    padding: 5px 10px;
+    border-radius: 10px;
+    background-color: rgba(153, 153, 153, 0.2);
+    margin: 0 5px 10px 5px;
 }
 </style>
