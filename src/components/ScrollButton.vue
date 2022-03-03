@@ -1,8 +1,8 @@
 <script setup lang="ts">
 
 function scrolldown() {
-  const pageHeight = window.innerHeight
-  window.scrollBy(0, pageHeight)
+  const about = document.querySelector('.about-section')
+  about?.scrollIntoView()
 }
 
 </script>
