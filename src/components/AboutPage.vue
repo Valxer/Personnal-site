@@ -2,7 +2,7 @@
 </script>
 
 <template>
-  <section class="about-section" w-screen h-screen>
+  <section class="about-section" relative w-screen h-screen>
     <h1>ABOUT</h1>
   </section>
 </template>
