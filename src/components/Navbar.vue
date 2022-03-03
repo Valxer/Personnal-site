@@ -31,7 +31,7 @@ function toggleNavBar() {
   </div>
 </template>
 
-<style scoped>
+<style scoped lang="scss">
 .site-logo {
   background-image: url("/logo.svg");
   background-size: cover;
@@ -49,9 +49,9 @@ function toggleNavBar() {
 }
 .navbar {
     display: none;
+  &.active{
+      display: flex;
 }
-.navbar.active{
-    display: flex;
 }
 li{
     margin-bottom: 3px;

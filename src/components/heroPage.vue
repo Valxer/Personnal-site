@@ -38,7 +38,7 @@
   </section>
 </template>
 
-<style scoped>
+<style scoped lang="scss">
 .hero-section {
   background-image: url("/LandingBackground.jpg");
   background-size: cover;
@@ -49,26 +49,26 @@
 }
 .text-title {
   width: 15ch;
-}
-.text-title:before {
-  content: '';
-  display: block;
-  width: 20px;
-  height: 1px;
-  background:rgb(192, 38, 211);
-  position: absolute;
-  left:0;
-  top: 50%
-}
-.text-title:after {
-  content: '';
-  display: block;
-  width: 20px;
-  height: 1px;
-  background:rgb(192, 38, 211);
-  position: absolute;
-  right:0;
-  top: 50%
+  &:before {
+    content: '';
+    display: block;
+    width: 20px;
+    height: 1px;
+    background:rgb(192, 38, 211);
+    position: absolute;
+    left:0;
+    top: 50%
+  }
+  &:after {
+    content: '';
+    display: block;
+    width: 20px;
+    height: 1px;
+    background:rgb(192, 38, 211);
+    position: absolute;
+    right:0;
+    top: 50%
+  }
 }
 .typing {
   position: absolute;
@@ -77,16 +77,16 @@
   overflow: hidden;
   border-right: 3px solid;
   text-align: left;
-}
-.typing1 {
-  animation: blink .5s step-end infinite alternate;
-  animation: typing1 12s steps(15) 1.5s infinite ;
-}
-.typing2 {
-  animation: typing2 12s steps(26) 1.5s infinite , blink .5s step-end infinite alternate;
-}
-.typing3 {
-  animation: typing3 12s steps(22) 1.5s infinite , blink .5s step-end infinite alternate;
+  &1 {
+    animation: blink .5s step-end infinite alternate;
+    animation: typing1 12s steps(15) 1.5s infinite ;
+  }
+  &2 {
+    animation: typing2 12s steps(26) 1.5s infinite , blink .5s step-end infinite alternate;
+  }
+  &3 {
+    animation: typing3 12s steps(22) 1.5s infinite , blink .5s step-end infinite alternate;
+  }
 }
 button {
   border: 2px solid white;

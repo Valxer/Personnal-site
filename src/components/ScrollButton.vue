@@ -16,7 +16,7 @@ function scrolldown() {
   </div>
 </template>
 
-<style scoped>
+<style scoped lang="scss">
 .scroll:hover {
     transform: scale(1.3);
     transition: 300ms;
