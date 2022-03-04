@@ -5,7 +5,7 @@
 <template>
   <div class="footer -z-1" w-screen flex flex-col justify-between items-center mt-30px>
     <div class="banner w-7/10" flex flex-col items-center mt-30px>
-      <div class="banner__desc" w-full flex flex-col items-center mb-20px>
+      <div class="banner__desc" w-full flex flex-col items-center mb-50px>
         <h2 class="desc-title" w-full text-xl font-500>
           KEVIN LE VAN PHUNG
         </h2>
@@ -21,7 +21,7 @@
         </h2>
         <div class="social-icons" flex justify-between mb-20px>
           <a href="#" flex flex-col justify-between items-center>
-            <span class="icon i-carbon-logo-linkedin" mb-5px />
+            <span class="icon i-carbon-logo-linkedin" text-blue-700/>
             <p class="icon-text" text-xs>
               Linkedin
             </p>
@@ -33,7 +33,7 @@
             </p>
           </a>
           <a href="#" flex flex-col justify-between items-center>
-            <span class="icon i-carbon-application-web" />
+            <span class="icon i-carbon-application-web" text-fuchsia-500 />
             <p class="icon-text" text-xs>
               Website
             </p>
@@ -52,11 +52,17 @@
   background-color: black;
   box-shadow: 0px -2px 7px black;
 }
-.icon {
-  font-size: large;
-  color: white;
-  background-color: white;
+a {
+  position: relative;
+  .icon {
+    font-size: 2rem;
+    margin-bottom: 5px;
+    &-text {
+      font-size: 0.9rem;
+    }
+  }
 }
+
 .copyright::before {
  content: '';
  position: absolute;
