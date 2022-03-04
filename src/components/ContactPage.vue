@@ -112,7 +112,7 @@
         left: 12px;
         top: 2.5px;
         color: #737373;
-        transition: top 300ms ease, color 300ms ease, font-size 300ms ease;
+        transition: top 300ms ease, left 300ms ease, color 300ms ease, font-size 300ms ease;
     }
     .error-message {
         width: 100%;
