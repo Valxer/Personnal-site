@@ -1,5 +1,7 @@
 <script setup lang="ts">
 
+import { aboutScroll, contactScroll } from '~/composables'
+
 function toggleNavBar() {
   const navBar = document.querySelector('.navbar')
   navBar?.classList.toggle('active')

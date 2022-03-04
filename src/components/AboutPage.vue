@@ -1,4 +1,7 @@
 <script setup lang="ts">
+
+import { contactScroll } from '~/composables'
+
 </script>
 
 <template>
