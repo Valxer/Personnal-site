@@ -1,9 +1,6 @@
 <script setup lang="ts">
 
-function aboutScroll() {
-  const about = document.querySelector('.about-section')
-  about?.scrollIntoView()
-}
+import { aboutScroll } from '~/composables'
 
 </script>
 
