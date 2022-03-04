@@ -5,7 +5,7 @@
   <section class="contact-section z-1" relative w-screen min-h-screen flex flex-col justify-start items-center>
     <div class="color-overlay -z-1" absolute h-screen w-screen />
     <h2 class="header" flex flex-col justify-between items-center mb-30px mt-50px>
-      <span class="header__title" relative text-fuchsia-500 text-lg font-semibold text-center mb-15px>CONTACT</span>
+      <span class="header__title" relative text-fuchsia-500 text-lg font-semibold text-center mb-30px>CONTACT</span>
       <span class="header__text w-6/10" text-sm font-600 leading-tight text-true-gray500>Submit the form below so I can get back to you as soon as possible</span>
     </h2>
     <div class="form-container w-15/20" flex flex-col justify-start items-center>
