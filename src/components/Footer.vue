@@ -4,16 +4,16 @@
 
 <template>
   <div class="footer" w-screen flex flex-col justify-between items-center mt-30px>
-    <div class="banner w-7/10" flex-col justify-evenly items-center mt-30px>
-      <div class="banner__desc" flex flex-col items-center>
+    <div class="banner w-7/10" flex flex-col items-center mt-30px>
+      <div class="banner__desc" w-full flex flex-col items-center mb-20px>
         <h2 class="desc-title" w-full text-xl font-500>
           KEVIN LE VAN PHUNG
         </h2>
-        <p class="desc-text" w-full text-sm text-true-gray-500 mt-10px>
+        <p class="desc-text" w-full text-sm text-true-gray-500 mt-15px>
           A Frontend focused Web Developer that keeps developping his skills in order to be the Web Developer you need!
         </p>
       </div>
-      <div class="banner__social" mt-20px>
+      <div class="banner__social" max-w-300px w-full flex flex-col>
         <h2 class="social-title" text-xl mb-20px>
           SOCIAL LINKS
         </h2>
@@ -39,7 +39,7 @@
         </div>
       </div>
     </div>
-    <div class="copyright" relative text-xs mt-30px mb-15px>
+    <div class="copyright" w-screen relative text-xs mt-50px mb-25px>
       Copyright 2022, Made by <a href="#">Kevin Le Van Phung</a>
     </div>
   </div>
@@ -57,10 +57,22 @@
 .copyright::before {
  content: '';
  position: absolute;
- top: -15px;
- left: calc(50% - 100px);
- width: 200px;
+ top: -25px;
+ left: 20%;
+ width: 60%;
  height: 1px;
  background-color: grey;
+}
+@media screen and (min-width: 1024px) {
+  .banner {
+    width: 85%;
+    flex-direction: row;
+    justify-content: space-between;
+    &__desc, &__social {
+      width: 45%;
+      height: 110px;
+      text-align: left;
+    }
+  }
 }
 </style>
