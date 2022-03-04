@@ -1,10 +1,9 @@
 <script setup lang="ts">
-
 </script>
 
 <template>
   <div class="footer -z-1" w-screen flex flex-col justify-between items-center mt-30px>
-    <div class="banner w-7/10" flex flex-col items-center mt-30px>
+    <div class="banner w-7/10" flex flex-col items-center mt-50px>
       <div class="banner__desc" w-full flex flex-col items-center mb-50px>
         <h2 class="desc-title" w-full text-xl font-500>
           KEVIN LE VAN PHUNG
@@ -20,13 +19,13 @@
           SOCIAL LINKS
         </h2>
         <div class="social-icons" flex justify-between mb-20px>
-          <a href="#" flex flex-col justify-between items-center>
+          <a href="https://www.linkedin.com/in/levanphungk/" target="_blank" flex flex-col justify-between items-center>
             <span class="icon i-carbon-logo-linkedin" text-blue-700/>
             <p class="icon-text" text-xs>
               Linkedin
             </p>
           </a>
-          <a href="#" flex flex-col justify-between items-center>
+          <a href="https://github.com/Valxer" target="_blank" flex flex-col justify-between items-center>
             <span class="icon i-carbon-logo-github" />
             <p class="icon-text" text-xs>
               Github
