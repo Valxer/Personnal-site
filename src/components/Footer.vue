@@ -39,7 +39,7 @@
         </div>
       </div>
     </div>
-    <div class="copyright">
+    <div class="copyright" text-sm text-true-gray-500>
       Copyright 2022, Made by <a href="#">Kevin Le Van Phung</a>
     </div>
   </div>
