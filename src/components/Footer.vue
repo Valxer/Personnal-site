@@ -3,7 +3,7 @@
 </script>
 
 <template>
-  <div class="footer" w-screen flex flex-col justify-between items-center mt-30px>
+  <div class="footer -z-1" w-screen flex flex-col justify-between items-center mt-30px>
     <div class="banner w-7/10" flex flex-col items-center mt-30px>
       <div class="banner__desc" w-full flex flex-col items-center mb-20px>
         <h2 class="desc-title" w-full text-xl font-500>
@@ -50,6 +50,7 @@
 <style scoped lang="scss">
 .footer {
   background-color: black;
+  box-shadow: 0px -2px 7px black;
 }
 .icon {
   font-size: large;

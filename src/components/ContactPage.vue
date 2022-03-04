@@ -64,6 +64,7 @@
 .contact-section {
   background-image: url("/LandingBackground.jpg");
   background-size: cover;
+  box-shadow: 0px -5px 10px #737373;
 }
 .color-overlay {
   background: rgb(0,0,0);
