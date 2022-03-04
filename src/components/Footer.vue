@@ -18,20 +18,20 @@
           SOCIAL LINKS
         </h2>
         <div class="social-icons" flex justify-between mb-20px>
-          <a href="#">
-            <span class="icon i-carbon-logo-linkedin" text-light100 text-xl />
+          <a href="#" flex flex-col justify-between items-center>
+            <span class="icon i-carbon-logo-linkedin" mb-5px />
             <p class="icon-text" text-xs>
               Linkedin
             </p>
           </a>
-          <a href="#">
+          <a href="#" flex flex-col justify-between items-center>
             <span class="icon i-carbon-logo-github" />
             <p class="icon-text" text-xs>
               Github
             </p>
           </a>
-          <a href="#">
-            <span class="icon i-carbon-application-web" text-fuchsia-600 text-xl />
+          <a href="#" flex flex-col justify-between items-center>
+            <span class="icon i-carbon-application-web" />
             <p class="icon-text" text-xs>
               Website
             </p>
@@ -39,7 +39,7 @@
         </div>
       </div>
     </div>
-    <div class="copyright" text-sm text-true-gray-500>
+    <div class="copyright" relative text-xs mt-30px mb-15px>
       Copyright 2022, Made by <a href="#">Kevin Le Van Phung</a>
     </div>
   </div>
@@ -50,8 +50,17 @@
   background-color: black;
 }
 .icon {
-  width: 50px;
-  height: 50px;
+  font-size: large;
   color: white;
+  background-color: white;
+}
+.copyright::before {
+ content: '';
+ position: absolute;
+ top: -15px;
+ left: calc(50% - 100px);
+ width: 200px;
+ height: 1px;
+ background-color: grey;
 }
 </style>
