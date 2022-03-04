@@ -1,6 +1,4 @@
 <script setup lang="ts">
-import AboutPage from '~/components/AboutPage.vue'
-import ContactPage from '~/components/ContactPage.vue'
 </script>
 
 <template>
