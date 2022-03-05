@@ -60,6 +60,10 @@ a {
       font-size: 0.9rem;
     }
   }
+  &:hover {
+    transform: scale(1.2);
+    transition: 300ms;
+  }
 }
 
 .copyright::before {
