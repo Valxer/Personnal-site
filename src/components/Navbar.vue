@@ -54,7 +54,7 @@ function toggleNavBar() {
     border-radius: 10px;
 }
 .navbar {
-    background: hsl(0 0% 100% / 0.1);
+    background: hsl(0 0% 10% / 0.8);
     backdrop-filter: blur(1rem);
     @media screen and (max-width: 640px) {
 
