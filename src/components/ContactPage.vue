@@ -4,7 +4,7 @@
 <template>
   <section id="contact-section" class="contact-section" relative w-screen min-h-screen flex flex-col justify-start items-center>
     <div class="color-overlay" absolute h-screen w-screen />
-    <h2 class="header z-1" flex flex-col justify-between items-center mb-30px mt-50px>
+    <h2 class="header z-1" flex flex-col justify-between items-center mb-50px mt-40px>
       <span class="header__title" relative text-fuchsia-500 text-lg font-semibold text-center mb-30px>CONTACT</span>
       <span class="header__text w-6/10" text-sm font-600 leading-tight text-true-gray500>Submit the form below so I can get back to you as soon as possible</span>
     </h2>
@@ -50,7 +50,7 @@
         <h3 w-full h-50px flex flex-col items-start>
           <p>GITHUB</p>
           <p text-sm font-600 text-true-gray500>
-            <a href="https://github.com/Valxer">github.com/Valxer</a>
+            <a href="https://github.com/Valxer" target="_blank">github.com/Valxer</a>
           </p>
         </h3>
       </div>
@@ -86,6 +86,7 @@
     position: relative;
     border-top: 20px solid transparent;
     width: 100%;
+    cursor: text;
     input , textarea{
         border: none;
         appearance: none;
