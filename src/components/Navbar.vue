@@ -10,16 +10,16 @@ function toggleNavBar() {
 }
 
 function routerHome() {
-  router.push(`/`)
+  router.push('/')
 }
 function routerAbout() {
-  router.push(`/#about-section`)
+  router.push('/#about-section')
 }
 function routerProjects() {
-  router.push(`/#project-section`)
+  router.push('/#project-section')
 }
 function routerContact() {
-  router.push(`/#contact-section`)
+  router.push('/#contact-section')
 }
 
 </script>
