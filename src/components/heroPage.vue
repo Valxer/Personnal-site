@@ -1,6 +1,6 @@
 <script setup lang="ts">
 
-import { aboutScroll } from '~/composables'
+import { aboutScroll, projectScroll } from '~/composables'
 
 </script>
 
@@ -30,7 +30,7 @@ import { aboutScroll } from '~/composables'
           </div>
         </div>
         <div class="hello_main-links" h-90px flex flex-col justify-between items-center>
-          <button class="project-btn">MY PROJECTS</button>
+          <button class="project-btn" @click="projectScroll">MY PROJECTS</button>
           <button class="about-btn" @click="aboutScroll">
             MORE ABOUT ME
           </button>

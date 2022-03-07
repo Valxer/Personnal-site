@@ -9,3 +9,8 @@ export function contactScroll() {
   console.log("contact : ", contact)
   contact?.scrollIntoView()
 }
+export function projectScroll() {
+  const project = document.querySelector('.project-section')
+  console.log("project : ", project)
+  project?.scrollIntoView()
+}
