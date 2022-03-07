@@ -100,25 +100,43 @@ import { contactScroll } from '~/composables'
 .skills__skill{
     padding: 5px 10px;
     border-radius: 5px;
-    background-color: rgba(153, 153, 153, 0.3);
+    background-color: rgb(153, 153, 153, 0.5);
 }
 @media screen and (min-width: 1024px) {
-    .details {
-        margin-top: 15px;
-        flex-direction: row;
-        justify-content: space-between;
-        width: 80%;
-        @media screen and (min-width:1350px) {
-                width: 60%
-            }
-        &__main {
-            width: 60%;
-            display: flex;
-            flex-direction: column;
-        }
-        &__skills {
-            width: 30%;
-        }
+  .about-section {
+    background-image: url("/About.svg");
+    background-repeat: no-repeat;
+    background-size: 20%;
+    background-position: 100% 15%;
+    @media screen and (min-width: 1350px) {
+      background-size: 20%;
+      background-position: 100% 50%;
     }
+    @media screen and (min-width: 1800px) {
+      background-size: 25%;
+      background-position: 100% 50%;
+    }
+    @media screen and (min-width: 2200px) {
+      background-size: contain;
+      background-position: 95% 50%;
+    }
+  }
+  .details {
+      margin-top: 15px;
+      flex-direction: row;
+      justify-content: space-between;
+      width: 80%;
+      @media screen and (min-width:1350px) {
+              width: 60%
+          }
+      &__main {
+          width: 60%;
+          display: flex;
+          flex-direction: column;
+      }
+      &__skills {
+          width: 30%;
+      }
+  }
 }
 </style>
