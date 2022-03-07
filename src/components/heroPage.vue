@@ -5,11 +5,10 @@ import { aboutScroll } from '~/composables'
 </script>
 
 <template>
-  <section class="hero-section z-1" relative w-screen h-screen flex justify-center items-center shadow-lg shadow-gray-500>
-    <div class="color-overlay -z-1" absolute h-screen w-screen />
+  <section class="hero-section" relative w-screen h-screen flex justify-center items-center shadow-lg shadow-gray-500>
+    <div class="color-overlay" absolute h-screen w-screen />
     <router-view />
-    <Navbar />
-    <div class="hello w-3/4" flex flex-col items-center>
+    <div class="hello w-3/4 z-1" flex flex-col items-center>
       <div class="hello_main w-1/1" h-250px flex flex-col justify-between>
         <div class="hello_main-text" flex flex-col items-center>
           <p class="text-title" relative text-fuchsia-500 font-medium>

@@ -25,7 +25,7 @@ function routerContact() {
 </script>
 
 <template>
-  <div class="menu" absolute top-0 w-screen min-w-300px flex justify-between items-start>
+  <div class="menu z-3" absolute top-0 w-screen min-w-300px flex justify-between items-start>
     <div class="site-logo" w-50px h-50px ml-25px mt-25px />
     <div class="nav-container w-4/10 z-2" relative h-screen min-w-150px>
       <button href="#" class="toggle-navbar z-3" fixed top-0 flex flex-col justify-between w-30px h-21px @click="toggleNavBar()">
