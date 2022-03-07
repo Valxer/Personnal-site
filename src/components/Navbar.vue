@@ -13,25 +13,25 @@ function toggleNavBar() {
   <div class="menu" absolute top-0 w-screen flex justify-between items-start>
     <div class="site-logo" w-50px h-50px ml-25px mt-25px />
     <div class="nav-container w-4/10" relative h-screen min-w-125px>
-      <button href="#" class="toggle-navbar z-2" fixed top-0 flex flex-col justify-between w-30px h-21px @click="toggleNavBar()">
+      <button href="#" class="toggle-navbar z-3" fixed top-0 flex flex-col justify-between w-30px h-21px @click="toggleNavBar()">
         <span class="slice" />
         <span class="slice" />
         <span class="slice" />
       </button>
-      <nav class="navbar z-1" fixed flex justify-end w-full h-full>
-        <ul class="navlist h-1/3" w-full min-w-125px min-h-300px flex flex-col justify-between items-start pt-100px pl-25px>
-          <li>
-            <a href="#">HOME</a>
-          </li>
-          <li>
-            <a href="#">ABOUT</a>
-          </li>
-          <li>
-            <a href="#">PROJECTS</a>
-          </li>
-          <li>
-            <a href="#">CONTACT</a>
-          </li>
+      <nav class="navbar z-2" fixed flex justify-end w-full h-full>
+        <ul class="navlist h-1/3" w-full min-w-125px min-h-300px flex flex-col justify-between items-start pt-100px mr-25px>
+          <a href="#">
+            <li>HOME</li>
+          </a>
+          <a href="#about-section">
+            <li>ABOUT</li>
+          </a>
+          <a href="#project-section">
+            <li>PROJECTS</li>
+          </a>
+          <a href="#contact-section">
+            <li>CONTACT</li>
+          </a>
         </ul>
       </nav>
     </div>
@@ -67,9 +67,19 @@ function toggleNavBar() {
       }
     }
 }
-li{
-    margin-bottom: 3px;
-    cursor: pointer;
+a{
+  padding: 15px 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 3px;
+  cursor: pointer;
+  transition: transform 300ms ease, color 300ms ease, font-weight 300ms ease;
+  &:hover {
+    transform: scale(1.5);
+    color: rgb(217,70,239);
+    transition: transform 300ms ease, color 300ms ease, font-weight 300ms ease;
+  }
 }
 @media screen and (min-width: 640px) {
     .toggle-navbar{
