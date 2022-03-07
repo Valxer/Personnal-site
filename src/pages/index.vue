@@ -5,6 +5,7 @@
   <router-view />
   <HeroPage />
   <AboutPage />
+  <ProjectPage />
   <ContactPage />
 </template>
 
