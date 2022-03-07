@@ -35,8 +35,8 @@ function routerContact() {
         <span class="slice" />
         <span class="slice" />
       </button>
-      <nav class="navbar" fixed flex justify-end w-full h-full>
-        <ul class="navlist h-1/3" w-full min-w-125px min-h-300px flex flex-col justify-between items-start pt-100px mr-25px>
+      <nav class="navbar" fixed flex justify-end w-full h-full text-2xl>
+        <ul class="navlist h-1/3" w-full min-w-125px min-h-400px flex flex-col justify-between items-start pt-100px mr-25px>
           <a href="#" @click="routerHome">
             <li>HOME</li>
           </a>
@@ -93,14 +93,14 @@ function routerContact() {
 .navbar {
     background: hsl(0 0% 10% / 0.8);
     backdrop-filter: blur(1rem);
-    @media screen and (max-width: 640px) {
+    @media screen and (max-width: 1024px) {
 
       transform: translateX(100%);
-      transition: 500ms ease-out;
+      transition: 300ms ease-out;
       &.active{
           display: flex;
           transform: translateX(0%);
-          transition: 500ms ease-out;
+          transition: 300ms ease-out;
       }
     }
 }
@@ -113,12 +113,12 @@ a{
   cursor: pointer;
   transition: transform 300ms ease, color 300ms ease, font-weight 300ms ease;
   &:hover {
-    transform: scale(1.5);
+    transform: scale(1.5) translateX(5px);
     color: rgb(217,70,239);
-    transition: transform 300ms ease, color 300ms ease, font-weight 300ms ease;
+    transition: transform 300ms ease, color 300ms ease;
   }
 }
-@media screen and (min-width: 640px) {
+@media screen and (min-width: 1024px) {
     .toggle-navbar{
         display: none;
     }
@@ -133,8 +133,8 @@ a{
     }
     .nav-container {
       height: 100px;
-      width: 75%;
-      max-width: 650px;
+      width: 85%;
+      max-width: 800px;
     }
     .navbar{
         position: static;

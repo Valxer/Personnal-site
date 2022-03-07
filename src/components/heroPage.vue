@@ -91,7 +91,7 @@ import { aboutScroll, projectScroll } from '~/composables'
   }
 }
 button {
-  border: 2px solid white;
+  border: 2px solid rgb(192, 38, 211);;
   width: 250px;
   padding-top: 10px;
   padding-bottom: 10px;
