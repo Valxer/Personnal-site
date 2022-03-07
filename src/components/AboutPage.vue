@@ -71,7 +71,19 @@ import { contactScroll } from '~/composables'
           </div>
         </div>
       </div>
-      <button class="contact-btn" mt-40px mb-50px px-30px py-10px border-2 border-fuchsia600 text-fuchsia600 text-lg font-semibold @click="contactScroll">
+      <button
+        class="contact-btn"
+        mt-40px
+        mb-50px
+        px-30px
+        py-10px
+        border-2
+        border-fuchsia600
+        text-dark-700
+        text-2xl
+        font-semibold
+        @click="contactScroll"
+      >
         CONTACT
       </button>
     </div>
