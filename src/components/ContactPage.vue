@@ -8,7 +8,7 @@
       <span class="header__title" relative text-fuchsia-500 text-lg font-semibold text-center mb-30px>CONTACT</span>
       <span class="header__text w-6/10" text-sm font-600 leading-tight text-true-gray500>Submit the form below so I can get back to you as soon as possible</span>
     </h2>
-    <div class="form-container w-15/20  z-1" flex flex-col justify-start items-center>
+    <div class="form-container w-15/20" flex flex-col justify-start items-center>
       <form class="form" action="https://formsubmit.co/levanphungk@gmail.com" method="POST" w-full flex flex-col justify-between items-center>
         <label class="form-field" aria-label="Enter Name">
           <input type="text" name="name" placeholder="&nbsp;" required>
