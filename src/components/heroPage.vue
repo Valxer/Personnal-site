@@ -31,8 +31,8 @@ import { aboutScroll } from '~/composables'
           </div>
         </div>
         <div class="hello_main-links" h-90px flex flex-col justify-between items-center>
-          <button>MY PROJECTS</button>
-          <button @click="aboutScroll()">
+          <button class="project-btn">MY PROJECTS</button>
+          <button class="about-btn" @click="aboutScroll">
             MORE ABOUT ME
           </button>
         </div>
@@ -96,6 +96,15 @@ button {
   width: 175px;
   padding-top: 5px;
   padding-bottom: 5px;
+  transition: 300ms ease;
+  &.project-btn:hover {
+    transform: translateY(-5px) scale(1.2);
+    transition: 300ms ease;
+  }
+  &.about-btn:hover {
+    transform: translateY(5px) scale(1.2);
+    transition: 300ms ease;
+  }
 }
 .wrapper {
     width: 0;
