@@ -21,5 +21,8 @@ import { aboutScroll } from '~/composables'
       transform: scale(1.3);
       transition: 300ms ease;
   }
+  @media screen and (max-width: 1024px) {
+    display: none;
+  }
 }
 </style>
