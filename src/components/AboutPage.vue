@@ -109,7 +109,6 @@ import { contactScroll } from '~/composables'
     background-size: 20%;
     background-position: 100% 15%;
     @media screen and (min-width: 1350px) {
-      background-size: 20%;
       background-position: 100% 50%;
     }
     @media screen and (min-width: 1800px) {
