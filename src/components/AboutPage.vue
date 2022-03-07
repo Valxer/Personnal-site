@@ -73,8 +73,8 @@ import { contactScroll } from '~/composables'
       </div>
       <button
         class="contact-btn"
-        mt-40px
-        mb-50px
+        mt-50px
+        mb-75px
         px-30px
         py-10px
         border-2
