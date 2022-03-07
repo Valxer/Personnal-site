@@ -2,34 +2,49 @@
 
 import { aboutScroll, contactScroll } from '~/composables'
 
+const router = useRouter()
+
 function toggleNavBar() {
   const navBar = document.querySelector('.navbar')
   navBar?.classList.toggle('active')
 }
 
+function routerHome() {
+  router.push(`/`)
+}
+function routerAbout() {
+  router.push(`/#about-section`)
+}
+function routerProjects() {
+  router.push(`/`)
+}
+function routerContact() {
+  router.push(`/#contact-section`)
+}
+
 </script>
 
 <template>
-  <div class="menu" absolute top-0 w-screen flex justify-between items-start>
+  <div class="menu" absolute top-0 w-screen min-w-300px flex justify-between items-start>
     <div class="site-logo" w-50px h-50px ml-25px mt-25px />
-    <div class="nav-container w-4/10" relative h-screen min-w-125px>
+    <div class="nav-container w-4/10 z-2" relative h-screen min-w-150px>
       <button href="#" class="toggle-navbar z-3" fixed top-0 flex flex-col justify-between w-30px h-21px @click="toggleNavBar()">
         <span class="slice" />
         <span class="slice" />
         <span class="slice" />
       </button>
-      <nav class="navbar z-2" fixed flex justify-end w-full h-full>
+      <nav class="navbar" fixed flex justify-end w-full h-full>
         <ul class="navlist h-1/3" w-full min-w-125px min-h-300px flex flex-col justify-between items-start pt-100px mr-25px>
-          <a href="#">
+          <a href="#" @click="routerHome">
             <li>HOME</li>
           </a>
-          <a href="#about-section">
+          <a href="#about-section" @click="routerAbout">
             <li>ABOUT</li>
           </a>
-          <a href="#project-section">
+          <a href="#project-section" @click="routerProjects">
             <li>PROJECTS</li>
           </a>
-          <a href="#contact-section">
+          <a href="#contact-section" @click="routerContact">
             <li>CONTACT</li>
           </a>
         </ul>
