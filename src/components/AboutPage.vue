@@ -5,7 +5,7 @@ import { contactScroll } from '~/composables'
 </script>
 
 <template>
-  <section class="about-section" relative w-screen flex flex-col justify-center items-center text-true-gray600>
+  <section id="about-section" class="about-section" relative w-screen flex flex-col justify-center items-center text-true-gray600>
     <div class="content h-9/10" flex flex-col justify-start items-center mt-50px>
       <h2 class="header" flex flex-col justify-between items-center mb-30px>
         <span class="header__title" relative text-fuchsia-500 text-lg font-semibold text-center mb-15px>ABOUT ME</span>
@@ -71,7 +71,7 @@ import { contactScroll } from '~/composables'
           </div>
         </div>
       </div>
-      <button class="contact" mt-40px mb-50px px-30px py-10px border-2 border-fuchsia600 text-fuchsia600 text-lg font-semibold>
+      <button class="contact" mt-40px mb-50px px-30px py-10px border-2 border-fuchsia600 text-fuchsia600 text-lg font-semibold @click="contactScroll">
         CONTACT
       </button>
     </div>
