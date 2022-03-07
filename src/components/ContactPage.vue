@@ -133,6 +133,12 @@ button {
         width: fit-content;
         background-color: rgba(0,0,0,0.7);
         backdrop-filter: blur(8px);
+        transition: 300ms ease;
+        &:hover {
+          transform: scale(1.2);
+          color: rgb(217,70,239);
+          transition: 300ms ease;
+        }
 }
 @media screen and (min-width: 1024px) {
     .contact-section{
