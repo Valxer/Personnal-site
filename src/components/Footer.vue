@@ -77,7 +77,7 @@ a {
 }
 @media screen and (min-width: 1024px) {
   .banner {
-    width: 85%;
+    width: 75%;
     flex-direction: row;
     justify-content: space-between;
     &__desc, &__social {
