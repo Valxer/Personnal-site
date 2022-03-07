@@ -2,7 +2,7 @@
 </script>
 
 <template>
-  <div class="footer -z-1" w-screen flex flex-col justify-between items-center mt-30px>
+  <div class="footer" w-screen flex flex-col justify-between items-center mt-30px>
     <div class="banner w-7/10" flex flex-col items-center mt-50px>
       <div class="banner__desc" w-full flex flex-col items-center mb-50px>
         <h2 class="desc-title" w-full text-xl font-500>
