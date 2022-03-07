@@ -14,9 +14,12 @@ import { aboutScroll } from '~/composables'
 </template>
 
 <style scoped lang="scss">
-.scroll:hover {
-    cursor: pointer;
-    transform: scale(1.3);
-    transition: 300ms;
+.scroll {
+  transition: 300ms ease;
+  &:hover {
+      cursor: pointer;
+      transform: scale(1.3) translateY(5px);
+      transition: 300ms ease;
+  }
 }
 </style>
