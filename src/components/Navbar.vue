@@ -6,7 +6,9 @@ const router = useRouter()
 
 function toggleNavBar() {
   const navBar = document.querySelector('.navbar')
+  const toggle = document.querySelector('.toggle-navbar')
   navBar?.classList.toggle('active')
+  toggle?.classList.toggle('active')
 }
 
 function routerHome() {
@@ -25,10 +27,10 @@ function routerContact() {
 </script>
 
 <template>
-  <div class="menu z-3" absolute top-0 w-screen min-w-300px flex justify-between items-start>
-    <div class="site-logo" w-50px h-50px ml-25px mt-25px />
+  <div class="menu" absolute top-0 w-screen min-w-300px flex justify-between items-start>
+    <div class="site-logo z-3" w-50px h-50px ml-25px mt-25px />
     <div class="nav-container w-4/10 z-2" relative h-screen min-w-150px>
-      <button href="#" class="toggle-navbar z-3" fixed top-0 flex flex-col justify-between w-30px h-21px @click="toggleNavBar()">
+      <button href="#" class="toggle-navbar z-3" fixed top-0 flex flex-col justify-between w-30px h-25px @click="toggleNavBar()">
         <span class="slice" />
         <span class="slice" />
         <span class="slice" />
@@ -61,12 +63,32 @@ function routerContact() {
 .toggle-navbar {
     top: 2.5rem;
     right: 25px;
+    transition: 300ms ease;
+    &:hover {
+      transform: scale(1.3);
+      transition: 300ms ease;
+    }
+    &.active .slice {
+      &:last-child {
+        opacity: 0;
+        transition: 300ms ease;
+      }
+      &:first-child {
+        transform: rotate(45deg) translate(4px, 4px);
+        transition: 300ms ease;
+      }
+      &:nth-child(2) {
+        transform: rotate(-45deg) translate(4px, -4px);
+        transition: 300ms ease;
+      }
+    }
 }
 .slice {
-    height: 3px;
-    width: 100%;
-    background-color: white;
-    border-radius: 10px;
+  height: 3px;
+  width: 100%;
+  background-color: white;
+  border-radius: 10px;
+  transition: 300ms ease;
 }
 .navbar {
     background: hsl(0 0% 10% / 0.8);
