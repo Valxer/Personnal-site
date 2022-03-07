@@ -9,8 +9,8 @@ import { aboutScroll, projectScroll } from '~/composables'
     <div class="color-overlay" absolute h-screen w-screen />
     <router-view />
     <div class="hello w-3/4 z-1" flex flex-col items-center>
-      <div class="hello_main w-1/1" h-250px flex flex-col justify-between>
-        <div class="hello_main-text" flex flex-col items-center>
+      <div class="hello_main w-1/1" h-300px flex flex-col justify-between>
+        <div class="hello_main-text" flex flex-col items-center mb-50px>
           <p class="text-title" relative text-fuchsia-500 font-medium>
             HELLO THERE
           </p>
@@ -29,7 +29,7 @@ import { aboutScroll, projectScroll } from '~/composables'
             </div>
           </div>
         </div>
-        <div class="hello_main-links" h-90px flex flex-col justify-between items-center>
+        <div class="hello_main-links" h-200px flex flex-col justify-between items-center text-2xl>
           <button class="project-btn" @click="projectScroll">MY PROJECTS</button>
           <button class="about-btn" @click="aboutScroll">
             MORE ABOUT ME
@@ -92,9 +92,9 @@ import { aboutScroll, projectScroll } from '~/composables'
 }
 button {
   border: 2px solid white;
-  width: 175px;
-  padding-top: 5px;
-  padding-bottom: 5px;
+  width: 250px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   transition: 300ms ease;
   &.project-btn:hover {
     transform: translateY(-5px) scale(1.2);
