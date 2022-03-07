@@ -16,7 +16,7 @@ function routerAbout() {
   router.push(`/#about-section`)
 }
 function routerProjects() {
-  router.push(`/`)
+  router.push(`/#project-section`)
 }
 function routerContact() {
   router.push(`/#contact-section`)
