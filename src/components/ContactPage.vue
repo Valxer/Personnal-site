@@ -62,6 +62,7 @@
 
 <style scoped lang="scss">
 .contact-section {
+  color: white;
   background-image: url("/LandingBackground.jpg");
   background-size: cover;
   box-shadow: 0px -5px 10px #737373;

@@ -1,7 +1,5 @@
 <script setup lang="ts">
 
-import { aboutScroll, contactScroll } from '~/composables'
-
 const router = useRouter()
 
 function toggleNavBar() {
@@ -56,6 +54,9 @@ function routerContact() {
 </template>
 
 <style scoped lang="scss">
+.menu {
+  color: white;
+}
 .site-logo {
   background-image: url("/logo.svg");
   background-size: cover;

@@ -20,7 +20,7 @@
         </h2>
         <div class="social-icons" flex justify-between mb-20px>
           <a href="https://www.linkedin.com/in/levanphungk/" target="_blank" flex flex-col justify-between items-center>
-            <span class="icon i-carbon-logo-linkedin" text-blue-700/>
+            <span class="icon i-carbon-logo-linkedin" text-blue-700 />
             <p class="icon-text" text-xs>
               Linkedin
             </p>
@@ -48,6 +48,7 @@
 
 <style scoped lang="scss">
 .footer {
+  color: white;
   background-color: black;
   box-shadow: 0px -2px 7px black;
 }

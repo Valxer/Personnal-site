@@ -30,7 +30,9 @@ import { aboutScroll, projectScroll } from '~/composables'
           </div>
         </div>
         <div class="hello_main-links" h-200px flex flex-col justify-between items-center text-2xl>
-          <button class="project-btn" @click="projectScroll">MY PROJECTS</button>
+          <button class="project-btn" @click="projectScroll">
+            MY PROJECTS
+          </button>
           <button class="about-btn" @click="aboutScroll">
             MORE ABOUT ME
           </button>
@@ -43,6 +45,7 @@ import { aboutScroll, projectScroll } from '~/composables'
 
 <style scoped lang="scss">
 .hero-section {
+  color: white;
   background-image: url("/LandingBackground.jpg");
   background-size: cover;
 }
