@@ -12,3 +12,7 @@ export function projectScroll() {
   const project = document.querySelector('.project-section')
   project?.scrollIntoView()
 }
+
+export function goTo(link?: string) {
+  window.open(link, '_blank')
+}
