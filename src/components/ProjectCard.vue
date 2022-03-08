@@ -13,6 +13,11 @@ import { goTo, projects } from '~/composables'
     <p class="card-excerpt">
       {{ project.excerpt }}
     </p>
+    <div class="skills" flex flex-wrap justify-center>
+      <div v-for="skill in project.skills" :key="skill" class="skill">
+        {{ skill }}
+      </div>
+    </div>
     <button class="card-btn" @click="goTo(project.link)">
       LIEN TENTANT
     </button>
