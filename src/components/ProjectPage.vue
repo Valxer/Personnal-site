@@ -10,8 +10,10 @@ console.log('Mes projets : ', projects)
   <section id="project-section" class="project-section" w-screen h-screeen>
     <h2 class="header" flex flex-col justify-between items-center mb-50px mt-40px>
       <span class="header__title" relative text-fuchsia-500 text-lg font-semibold text-center mb-30px>PROJECTS</span>
-      <span class="header__text w-6/10" text-sm font-600 leading-tight text-true-gray500>Here you will find some of the personal projects I relaised<br>Click the button to see more</span>
+      <span class="header__text w-6/10" text-sm font-600 leading-tight text-true-gray500>Here you will find some of the personal projects I realised</span>
     </h2>
+    <router-view />
+    <ProjectCard />
   </section>
 </template>
 
