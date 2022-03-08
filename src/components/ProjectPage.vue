@@ -1,3 +1,11 @@
+<script setup lang="ts">
+
+import { projects } from '~/composables'
+
+console.log('Mes projets : ', projects)
+
+</script>
+
 <template>
   <section id="project-section" class="project-section" w-screen h-screeen>
     <h2 class="header" flex flex-col justify-between items-center mb-50px mt-40px>
