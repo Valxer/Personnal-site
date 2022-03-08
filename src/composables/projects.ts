@@ -11,7 +11,7 @@ const project1: Project = {
   name: 'Personnal Website',
   excerpt: 'The site you are currently on. Used to display my projects and skills to anyone interested in them!',
   skills: ['VUE', 'HTML', 'SASS', 'Typescript', 'TailwindCSS', 'GIT', 'Github'],
-  image: '/public/Website.webp',
+  image: '/Website.webp',
   link: 'https://levanphungk.com/',
   livelink: 'hhtps://levanphungk.com/',
 }
@@ -19,18 +19,21 @@ const project2: Project = {
   name: 'Munchkin Character Sheet',
   excerpt: 'A personnal application used to create characters and follow their progreesion in  the Munchkin board game.',
   skills: ['VUE', 'HTML', 'SASS', 'Javascript', 'GIT', 'Github'],
+  image: '/Munchkin.webp',
   link: 'https://munchkincharsheet.netlify.app/',
   livelink: 'https://munchkincharsheet.netlify.app/',
 }
 const project3: Project = {
-  name: 'Oui',
+  name: 'Oh My Food',
   excerpt: '',
-  skills: ['VUE', 'HTML', 'SASS', 'Typescript', 'TailwindCSS', 'GIT', 'Github'],
+  image: '/Ohmyfood.webp',
+  skills: ['HTML', 'SASS', 'GIT', 'Github'],
 }
 const project4: Project = {
-  name: 'Non',
+  name: 'Reservia',
   excerpt: '',
-  skills: ['VUE', 'HTML', 'SASS', 'Typescript', 'TailwindCSS', 'GIT', 'Github'],
+  image: '/Reservia.webp',
+  skills: ['HTML', 'CSS', 'GIT', 'Github'],
 }
 
 export const projects: Project[] = []
