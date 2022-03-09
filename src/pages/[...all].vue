@@ -2,9 +2,13 @@
   <router-view />
   <Navbar />
   <div class="error-container" min-w-300px w-screen min-h-750px flex flex-col justify-end items-center>
-    <div class="text-section w-8/10 h-3/10" flex flex-col justify-center items-center mb-100px>
-      <h1 text-8xl font-700>Oops!</h1>
-      <p text-3xl mt-50px>We couldn't find that page.</p>
+    <div class="text-section w-8/10 h-3/10" flex flex-col justify-center items-center mb-100px text-white>
+      <h1 text-8xl font-700>
+        Oops!
+      </h1>
+      <p text-3xl mt-50px>
+        We couldn't find that page.
+      </p>
     </div>
   </div>
   <Footer />
@@ -12,8 +16,9 @@
 
 <style scoped lang="scss">
 .error-container {
+  background-color: #111111;
   background-image: url("/404.svg");
-  background-repeat: no-repeat; 
+  background-repeat: no-repeat;
   background-size: 78%;
   background-position: 50% 25%;
   @media screen and (min-width: 640px) {
