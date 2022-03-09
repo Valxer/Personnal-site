@@ -30,7 +30,7 @@ import { goTo, projects } from '~/composables'
       </div>
     </div>
     <button class="card-btn" @click="goTo(project.link)">
-      LIEN TENTANT
+      SEE LIVE
     </button>
   </div>
 </template>
