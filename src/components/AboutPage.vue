@@ -1,6 +1,6 @@
 <script setup lang="ts">
 
-import { contactScroll } from '~/composables'
+import { contactScroll, skills } from '~/composables'
 
 </script>
 
@@ -38,35 +38,8 @@ import { contactScroll } from '~/composables'
             My Skills
           </h3>
           <div class="skills" flex flex-wrap justify-center>
-            <div class="skills__skill">
-              HTML
-            </div>
-            <div class="skills__skill">
-              CSS
-            </div>
-            <div class="skills__skill">
-              SASS
-            </div>
-            <div class="skills__skill">
-              Javascript
-            </div>
-            <div class="skills__skill">
-              Typecript
-            </div>
-            <div class="skills__skill">
-              VUE
-            </div>
-            <div class="skills__skill">
-              Express
-            </div>
-            <div class="skills__skill">
-              Github
-            </div>
-            <div class="skills__skill">
-              SEO
-            </div>
-            <div class="skills__skill">
-              SQL
+            <div v-for="skill in skills" :key="skill" class="skills__skill">
+              {{ skill }}
             </div>
           </div>
         </div>
