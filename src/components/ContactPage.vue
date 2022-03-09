@@ -5,7 +5,7 @@
   <section id="contact-section" class="contact-section" relative w-screen min-h-screen flex flex-col justify-start items-center>
     <div class="color-overlay" absolute h-screen w-screen />
     <h2 class="header z-1" flex flex-col justify-between items-center mb-50px mt-40px>
-      <span class="header__title" relative text-fuchsia-500 text-lg font-semibold text-center mb-30px>CONTACT</span>
+      <span class="header__title" relative text-fuchsia-500 text-2xl font-semibold text-center mb-30px>CONTACT</span>
       <span class="header__text w-6/10" text-sm font-600 leading-tight text-true-gray500>Submit the form below so I can get back to you as soon as possible</span>
     </h2>
     <div class="form-container w-15/20 z-1" flex flex-col justify-start items-center>
@@ -30,7 +30,16 @@
         <input type="hidden" name="_template" value="table">
         <!-- <input type="hidden" name="_next" value="http://localhost:4000/"> TO CHNAGE WHEN I PUT IT ONLINE -->
         <input type="hidden" name="_captcha" value="false">
-        <button class="submit-btn" type="submit" px-25px py-10px border-1 border-fuchsia600 mt-30px>
+        <button
+          class="submit-btn"
+          type="submit"
+          px-25px sm:px-30px
+          py-10px sm:py-15px
+          border-1
+          border-fuchsia600
+          text-lg sm:text-xl
+          mt-30px
+        >
           Send Message
         </button>
       </form>
@@ -132,7 +141,6 @@
     }
 }
 button {
-        width: fit-content;
         background-color: rgba(0,0,0,0.7);
         backdrop-filter: blur(8px);
         transition: 300ms ease;

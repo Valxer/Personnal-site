@@ -8,7 +8,7 @@ import { contactScroll } from '~/composables'
   <section id="about-section" class="about-section" relative w-screen flex flex-col justify-center items-center text-true-gray600>
     <div class="content h-9/10" flex flex-col justify-start items-center mt-40px>
       <h2 class="header" flex flex-col justify-between items-center mb-50px>
-        <span class="header__title" relative text-fuchsia-500 text-lg font-semibold text-center mb-30px>ABOUT ME</span>
+        <span class="header__title" relative text-fuchsia-500 text-2xl font-semibold text-center mb-30px>ABOUT ME</span>
         <span class="header__text w-6/10" text-sm font-600 leading-tight>Get to know more about me and my current skills</span>
       </h2>
       <div class="details" w-full flex flex-col justify-between items-center text-left>
@@ -75,12 +75,12 @@ import { contactScroll } from '~/composables'
         class="contact-btn"
         mt-50px
         mb-75px
-        px-30px
-        py-10px
+        px-15px sm:px-30px
+        py-5px sm:py-10px
         border-2
         border-fuchsia600
         text-dark-700
-        text-2xl
+        text-lg sm:text-2xl
         font-semibold
         @click="contactScroll"
       >
