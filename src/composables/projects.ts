@@ -25,13 +25,13 @@ const project2: Project = {
 }
 const project3: Project = {
   name: 'Oh My Food',
-  excerpt: '',
+  excerpt: 'Formation Project : Front-End integration of a restaurant\'s website mockup. Card animations and responsive display were up to the imagination',
   image: '/Ohmyfood.webp',
   skills: ['HTML', 'SASS', 'GIT', 'Github'],
 }
 const project4: Project = {
   name: 'Reservia',
-  excerpt: '',
+  excerpt: 'Formation Project : Mockup integration of a rental website.',
   image: '/Reservia.webp',
   skills: ['HTML', 'CSS', 'GIT', 'Github'],
 }

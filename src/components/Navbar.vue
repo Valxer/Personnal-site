@@ -32,13 +32,36 @@ function routerContact() {
   <div class="menu" absolute top-0 w-screen min-w-300px flex justify-between items-start>
     <div class="site-logo z-3" w-50px h-50px ml-25px mt-25px />
     <div class="nav-container w-4/10 z-2" relative h-screen min-w-150px>
-      <button href="#" class="toggle-navbar z-3" fixed top-0 flex flex-col justify-between pb-2px w-30px h-25px @click="toggleNavBar()">
+      <button
+        href="#"
+        class="toggle-navbar z-3"
+        fixed
+        top-0
+        flex
+        flex-col
+        justify-between
+        pb-2px
+        w-30px
+        h-25px
+        @click="toggleNavBar()"
+      >
         <span class="slice" />
         <span class="slice" />
         <span class="slice" />
       </button>
       <nav class="navbar" fixed flex justify-end w-full h-full text-lg sm:text-xl>
-        <ul class="navlist h-1/3" w-full min-w-125px min-h-400px flex flex-col justify-between items-start pt-100px mr-25px>
+        <ul
+          class="navlist h-1/3"
+          w-full
+          min-w-125px
+          min-h-400px
+          flex
+          flex-col
+          justify-between
+          items-start
+          pt-100px
+          mr-25px
+        >
           <a href="#" @click="routerHome">
             <li>HOME</li>
           </a>

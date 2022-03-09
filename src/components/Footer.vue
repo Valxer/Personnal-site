@@ -9,8 +9,8 @@
           KEVIN LE VAN PHUNG
         </h2>
         <p class="desc-text" w-full text-sm text-true-gray-500 mt-15px>
-          A Frontend focused Web Developer that keeps developping his skills in order to be the Web Developer you need!
-          <br>
+          A Frontend focused Web Developer that keeps developping his skills in order to be the Web
+          Developer you need!<br>
           Contact me for any questions or remarks you might have regarding me or my work.
         </p>
       </div>
@@ -19,7 +19,14 @@
           SOCIAL LINKS
         </h2>
         <div class="social-icons" flex justify-between mb-20px>
-          <a href="https://www.linkedin.com/in/levanphungk/" target="_blank" flex flex-col justify-between items-center>
+          <a
+            href="https://www.linkedin.com/in/levanphungk/"
+            target="_blank"
+            flex
+            flex-col
+            justify-between
+            items-center
+          >
             <span class="icon i-carbon-logo-linkedin" text-blue-700 />
             <p class="icon-text" text-xs>
               Linkedin

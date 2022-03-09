@@ -1,15 +1,29 @@
 <script setup lang="ts">
 
-import { contactScroll } from '~/composables'
+import { contactScroll, skills } from '~/composables'
 
 </script>
 
 <template>
-  <section id="about-section" class="about-section" relative w-screen flex flex-col justify-center items-center text-true-gray600>
+  <section
+    id="about-section"
+    class="about-section"
+    relative
+    w-screen
+    flex
+    flex-col
+    justify-center
+    items-center
+    text-true-gray600
+  >
     <div class="content h-9/10" flex flex-col justify-start items-center mt-40px>
       <h2 class="header" flex flex-col justify-between items-center mb-50px>
-        <span class="header__title" relative text-fuchsia-500 text-2xl font-semibold text-center mb-30px>ABOUT ME</span>
-        <span class="header__text w-6/10" text-sm font-600 leading-tight>Get to know more about me and my current skills</span>
+        <span class="header__title" relative text-fuchsia-500 text-2xl font-semibold text-center mb-30px>
+          ABOUT ME
+        </span>
+        <span class="header__text w-6/10" text-sm font-600 leading-tight>
+          Get to know more about me and my current skills
+        </span>
       </h2>
       <div class="details" w-full flex flex-col justify-between items-center text-left>
         <div class="details__main w-7/10" mb-30px>
@@ -18,18 +32,21 @@ import { contactScroll } from '~/composables'
           </h3>
           <div class="details__main-details" text-justify text-sm>
             <p class="details__main-details-para">
-              My name is Kevin Le Van Phung and I'm a passionate <strong>Web Developer</strong> with a preference towards
-              <strong>Frontend development</strong>.
+              My name is Kevin Le Van Phung and I'm a passionate <strong>Web Developer</strong>
+              with a preference towards<strong>Frontend development</strong>.
             </p>
             <p class="details__main-details-para">
-              I love to be up-to-date about the tools I'm using especially my preferred framework : <strong>Vue</strong>.
+              I love to be up-to-date about the tools I'm using especially my preferred framework :
+              <strong>Vue</strong>.
             </p>
             <p class="details__main-details-para" mt-25px>
-              I'm curently working on my portfolio in order to display my skills to any person interested in seeing what I'm capable of.
+              I'm curently working on my portfolio in order to display my skills to any person interested
+              in seeing what I'm capable of.
             </p>
             <p class="details__main-details-para" mt-25px>
-              I would love to hear from you. Whether it's a <strong>project</strong>, <strong>job</strong> opportunity,
-              helpful <strong>criticism</strong> about my work or just a chat. Feel free to <strong>contact</strong> me!
+              I would love to hear from you. Whether it's a <strong>project</strong>, <strong>job</strong>
+              opportunity,helpful <strong>criticism</strong> about my work or just a chat. Feel free to
+              <strong>contact</strong> me!
             </p>
           </div>
         </div>
@@ -38,35 +55,8 @@ import { contactScroll } from '~/composables'
             My Skills
           </h3>
           <div class="skills" flex flex-wrap justify-center>
-            <div class="skills__skill">
-              HTML
-            </div>
-            <div class="skills__skill">
-              CSS
-            </div>
-            <div class="skills__skill">
-              SASS
-            </div>
-            <div class="skills__skill">
-              Javascript
-            </div>
-            <div class="skills__skill">
-              Typecript
-            </div>
-            <div class="skills__skill">
-              VUE
-            </div>
-            <div class="skills__skill">
-              Express
-            </div>
-            <div class="skills__skill">
-              Github
-            </div>
-            <div class="skills__skill">
-              SEO
-            </div>
-            <div class="skills__skill">
-              SQL
+            <div v-for="skill in skills" :key="skill" class="skills__skill">
+              {{ skill }}
             </div>
           </div>
         </div>
@@ -92,7 +82,7 @@ import { contactScroll } from '~/composables'
 
 <style scoped lang="scss">
 .about-section {
-    background-color: #FAFAFA;
+    background-color: #EEEEEE;
 }
 .header__title::after {
     content: '';

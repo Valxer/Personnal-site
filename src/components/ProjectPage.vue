@@ -2,10 +2,24 @@
 </script>
 
 <template>
-  <section id="project-section" class="project-section" w-screen h-screeen flex flex-col justify-between items-center>
+  <section
+    id="project-section"
+    class="project-section"
+    w-screen
+    h-screeen
+    flex
+    flex-col
+    justify-between
+    items-center
+    text-true-gray600
+  >
     <h2 class="header" flex flex-col justify-between items-center mb-50px mt-40px>
-      <span class="header__title" relative text-fuchsia-500 text-2xl font-semibold text-center mb-30px>PROJECTS</span>
-      <span class="header__text w-6/10" text-sm font-600 leading-tight text-true-gray500>Here you will find some of the personal projects I realised</span>
+      <span class="header__title" relative text-fuchsia-500 text-2xl font-semibold text-center mb-30px>
+        PROJECTS
+      </span>
+      <span class="header__text w-6/10" text-sm font-600 leading-tight>
+        Here you will find some of the personal projects I realised
+      </span>
     </h2>
     <router-view />
     <ProjectCard />
@@ -13,6 +27,9 @@
 </template>
 
 <style scoped lang="scss">
+.project-section {
+  background-color: #FFFFFF;
+}
 .header__title::after {
     content: '';
     display: block;
