@@ -11,7 +11,7 @@ import { aboutScroll, projectScroll } from '~/composables'
     <div class="hello w-3/4 z-1" flex flex-col items-center>
       <div class="hello_main w-1/1" h-300px flex flex-col justify-between>
         <div class="hello_main-text" flex flex-col items-center mb-50px>
-          <p class="text-title" relative text-fuchsia-500 font-medium>
+          <p class="text-title" relative text-fuchsia-500 font-medium text-lg>
             HELLO THERE
           </p>
           <h1 class="text-description" text-2xl mt-10px mx-auto>
@@ -29,8 +29,8 @@ import { aboutScroll, projectScroll } from '~/composables'
             </div>
           </div>
         </div>
-        <div class="hello_main-links" h-200px flex flex-col justify-between items-center text-2xl>
-          <button class="project-btn" @click="projectScroll">
+        <div class="hello_main-links" h-150px sm:h-200px flex flex-col justify-start items-center text-lg sm:text-2xl mt-50px>
+          <button class="project-btn" mb-30px @click="projectScroll">
             MY PROJECTS
           </button>
           <button class="about-btn" @click="aboutScroll">
@@ -94,11 +94,16 @@ import { aboutScroll, projectScroll } from '~/composables'
   }
 }
 button {
-  border: 2px solid rgb(192, 38, 211);;
-  width: 250px;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  border: 2px solid rgb(192, 38, 211);
+  width : 175px;
+  padding-top: 5px;
+  padding-bottom: 5px;
   transition: 300ms ease;
+  @media screen and (min-width: 640px) {
+    width: 250px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
   &.project-btn:hover {
     transform: translateY(-5px) scale(1.2);
     transition: 300ms ease;
@@ -113,7 +118,7 @@ button {
     animation: typing 12s steps(20) 1.5s infinite;
   }
 
-@media screen and (min-width: 1024px){
+@media screen and (min-width: 640px){
   .text-title {
     font-size: 1.25rem;
     line-height: 1.75rem;

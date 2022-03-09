@@ -16,6 +16,9 @@ import { aboutScroll } from '~/composables'
 <style scoped lang="scss">
 .scroll {
   transition: 300ms ease;
+  @media screen and (max-width: 1024px) {
+    display: none;
+  }
   &:hover {
       cursor: pointer;
       transform: scale(1.3);
