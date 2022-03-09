@@ -22,7 +22,7 @@
         Submit the form below so I can get back to you as soon as possible
       </span>
     </h2>
-    <div class="form-container w-15/20 z-1" flex flex-col justify-start items-center>
+    <div class="form-container w-15/20 z-1" flex flex-col justify-start items-center mb-30px>
       <form
         class="form"
         action="https://formsubmit.co/levanphungk@gmail.com"
