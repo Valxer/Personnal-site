@@ -2,14 +2,37 @@
 </script>
 
 <template>
-  <section id="contact-section" class="contact-section" relative w-screen min-h-screen flex flex-col justify-start items-center>
+  <section
+    id="contact-section"
+    class="contact-section"
+    relative
+    w-screen
+    min-h-screen
+    flex
+    flex-col
+    justify-start
+    items-center
+  >
     <div class="color-overlay" absolute h-screen w-screen />
     <h2 class="header z-1" flex flex-col justify-between items-center mb-50px mt-40px>
-      <span class="header__title" relative text-fuchsia-500 text-2xl font-semibold text-center mb-30px>CONTACT</span>
-      <span class="header__text w-6/10" text-sm font-600 leading-tight text-true-gray500>Submit the form below so I can get back to you as soon as possible</span>
+      <span class="header__title" relative text-fuchsia-500 text-2xl font-semibold text-center mb-30px>
+        CONTACT
+      </span>
+      <span class="header__text w-6/10" text-sm font-600 leading-tight text-true-gray500>
+        Submit the form below so I can get back to you as soon as possible
+      </span>
     </h2>
     <div class="form-container w-15/20 z-1" flex flex-col justify-start items-center>
-      <form class="form" action="https://formsubmit.co/levanphungk@gmail.com" method="POST" w-full flex flex-col justify-between items-center>
+      <form
+        class="form"
+        action="https://formsubmit.co/levanphungk@gmail.com"
+        method="POST"
+        w-full
+        flex
+        flex-col
+        justify-between
+        items-center
+      >
         <label class="form-field" aria-label="Enter Name">
           <input type="text" name="name" placeholder="&nbsp;" required>
           <span class="placeholder">Enter Name</span>
@@ -28,7 +51,7 @@
           <span class="placeholder">Write your message</span>
         </label>
         <input type="hidden" name="_template" value="table">
-        <!-- <input type="hidden" name="_next" value="http://localhost:4000/"> TO CHNAGE WHEN I PUT IT ONLINE -->
+        <input type="hidden" name="_next" value="http://levanphungk.com/">
         <input type="hidden" name="_captcha" value="false">
         <button
           class="submit-btn"

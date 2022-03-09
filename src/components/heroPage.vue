@@ -5,7 +5,17 @@ import { aboutScroll, projectScroll } from '~/composables'
 </script>
 
 <template>
-  <section class="hero-section" relative w-screen h-screen flex justify-center items-center shadow-lg shadow-gray-500>
+  <section
+    class="hero-section"
+    relative
+    w-screen
+    h-screen
+    flex
+    justify-center
+    items-center
+    shadow-lg
+    shadow-gray-500
+  >
     <div class="color-overlay" absolute h-screen w-screen />
     <router-view />
     <div class="hello w-3/4 z-1" flex flex-col items-center>
@@ -29,7 +39,18 @@ import { aboutScroll, projectScroll } from '~/composables'
             </div>
           </div>
         </div>
-        <div class="hello_main-links" h-150px sm:h-200px flex flex-col justify-start items-center text-lg sm:text-2xl mt-50px>
+        <div
+          class="hello_main-links"
+          h-150px
+          sm:h-200px
+          flex
+          flex-col
+          justify-start
+          items-center
+          text-lg
+          sm:text-2xl
+          mt-50px
+        >
           <button class="project-btn" mb-30px @click="projectScroll">
             MY PROJECTS
           </button>
