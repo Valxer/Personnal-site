@@ -12,7 +12,7 @@ const project1: Project = {
   excerpt: 'The site you are currently on. Created to display my projects and skills to anyone interested in them!',
   skills: ['VUE', 'HTML', 'SASS', 'Typescript', 'WindiCSS', 'GIT', 'Github'],
   image: '/Website.webp',
-  livelink: 'hhtps://levanphungk.com/',
+  livelink: 'https://levanphungk.com/',
 }
 const project2: Project = {
   name: 'Munchkin Character Sheet',
