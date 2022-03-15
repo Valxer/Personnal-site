@@ -59,6 +59,7 @@ import { goTo, projects } from '~/composables'
         text-lg
       >
         <button
+          v-show="project.livelink"
           class="card-btn"
           mr-30px
           px-15px
@@ -71,6 +72,7 @@ import { goTo, projects } from '~/composables'
           LIVE VERSION
         </button>
         <button
+          v-show="project.link"
           class="card-btn"
           px-15px
           py-5px
