@@ -49,7 +49,7 @@ import { goTo, projects } from '~/composables'
         <h3 class="card-title w-15/20" font-bold text-xl text-dark-700>
           {{ project.name }}
         </h3>
-        <p class="card-excerpt  w-15/20">
+        <p class="card-excerpt w-15/20">
           {{ project.excerpt }}
         </p>
         <div class="skills w-15/20" flex flex-wrap justify-center sm:justify-start>
