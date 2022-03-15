@@ -9,7 +9,7 @@ export interface Project {
 
 const project1: Project = {
   name: 'Personnal Website',
-  excerpt: 'The site you are currently on. Used to display my projects and skills to anyone interested in them!',
+  excerpt: 'The site you are currently on. Created to display my projects and skills to anyone interested in them!',
   skills: ['VUE', 'HTML', 'SASS', 'Typescript', 'WindiCSS', 'GIT', 'Github'],
   image: '/Website.webp',
   livelink: 'hhtps://levanphungk.com/',
