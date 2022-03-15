@@ -92,7 +92,11 @@ function routerContact() {
       transform: scale(1.3);
       transition: 300ms ease;
     }
+    &.dark-btn .slice{
+      background-color: black;
+    }
     &.active .slice {
+      background-color: white;
       &:last-child {
         opacity: 0;
         transition: 300ms ease;
