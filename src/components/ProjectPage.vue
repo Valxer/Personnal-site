@@ -13,7 +13,7 @@
     items-center
     text-true-gray600
   >
-    <h2 class="header" flex flex-col justify-between items-center mb-50px mt-40px>
+    <h2 class="header" flex flex-col justify-between items-center mb-50px mt-40px lg:mt-140px>
       <span class="header__title" relative text-fuchsia-500 text-2xl font-semibold text-center mb-30px>
         PROJECTS
       </span>

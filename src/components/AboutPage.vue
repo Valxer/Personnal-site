@@ -17,7 +17,7 @@ import { contactScroll, skills } from '~/composables'
     text-true-gray600
   >
     <div class="content h-9/10" flex flex-col justify-start items-center mt-40px>
-      <h2 class="header" flex flex-col justify-between items-center mb-50px>
+      <h2 class="header" flex flex-col justify-between items-center mb-50px lg:mt-140px>
         <span class="header__title" relative text-fuchsia-500 text-2xl font-semibold text-center mb-30px>
           ABOUT ME
         </span>

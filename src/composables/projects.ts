@@ -9,10 +9,9 @@ export interface Project {
 
 const project1: Project = {
   name: 'Personnal Website',
-  excerpt: 'The site you are currently on. Used to display my projects and skills to anyone interested in them!',
-  skills: ['VUE', 'HTML', 'SASS', 'Typescript', 'TailwindCSS', 'GIT', 'Github'],
+  excerpt: 'The site you are currently on. Created to display my projects and skills to anyone interested in them!',
+  skills: ['VUE', 'HTML', 'SASS', 'Typescript', 'WindiCSS', 'GIT', 'Github'],
   image: '/Website.webp',
-  link: 'https://levanphungk.com/',
   livelink: 'hhtps://levanphungk.com/',
 }
 const project2: Project = {
@@ -20,7 +19,7 @@ const project2: Project = {
   excerpt: 'A personnal application used to create characters and follow their progreesion in  the Munchkin board game.',
   skills: ['VUE', 'HTML', 'SASS', 'Javascript', 'GIT', 'Github'],
   image: '/Munchkin.webp',
-  link: 'https://munchkincharsheet.netlify.app/',
+  link: 'https://github.com/Valxer/MunchkinCharSheet',
   livelink: 'https://munchkincharsheet.netlify.app/',
 }
 const project3: Project = {
@@ -28,12 +27,16 @@ const project3: Project = {
   excerpt: 'Formation Project : Front-End integration of a restaurant\'s website mockup. Card animations and responsive display were up to the imagination',
   image: '/Ohmyfood.webp',
   skills: ['HTML', 'SASS', 'GIT', 'Github'],
+  livelink: 'https://valxer.github.io/OHMYFOOD__OpenClassrooms-projet-3/',
+  link: 'https://github.com/Valxer/OHMYFOOD__OpenClassrooms-projet-3',
 }
 const project4: Project = {
   name: 'Reservia',
   excerpt: 'Formation Project : Mockup integration of a rental website.',
   image: '/Reservia.webp',
   skills: ['HTML', 'CSS', 'GIT', 'Github'],
+  livelink: 'https://valxer.github.io/RESERVIA__OpenClassrooms-Projet-2/',
+  link: 'https://github.com/Valxer/RESERVIA__OpenClassrooms-Projet-2',
 }
 
 export const projects: Project[] = []

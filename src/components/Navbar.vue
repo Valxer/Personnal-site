@@ -96,7 +96,11 @@ function routerContact() {
       transform: scale(1.3);
       transition: 300ms ease;
     }
+    &.dark-btn .slice{
+      background-color: black;
+    }
     &.active .slice {
+      background-color: white;
       &:last-child {
         opacity: 0;
         transition: 300ms ease;
@@ -151,10 +155,15 @@ a{
         display: none;
     }
     .menu{
-        flex-direction: row;
-        align-items: center;
-        padding-top: 25px;
-        padding-left: 25px
+      flex-direction: row;
+      align-items: center;
+      padding-left: 25px;
+      &.sticky{
+        position: fixed;
+        z-index: 3;
+        background-color: black;
+        transition: 500ms ease;
+      }
     }
     .site-logo{
         margin: 0;
