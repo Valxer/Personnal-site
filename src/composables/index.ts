@@ -1,4 +1,5 @@
 export * from './dark'
 export * from './navfunctions'
 export * from './projects'
+export * from './scroll'
 export * from './skills'
