@@ -4,11 +4,11 @@ let project_height: number
 let toggle: Element | null
 
 export function definePageHeights() {
-  const hero = document.querySelector('.hero-section')
+  const hero = document.getElementsByClassName('hero-section')[0]
   hero_height = parseFloat(getComputedStyle(hero).height.split('px')[0])
-  const about = document.querySelector('.about-section')
+  const about = document.getElementsByClassName('about-section')[0]
   about_height = parseFloat(getComputedStyle(about).height.split('px')[0])
-  const project = document.querySelector('.project-section')
+  const project = document.getElementsByClassName('project-section')[0]
   project_height = parseFloat(getComputedStyle(project).height.split('px')[0])
   toggle = document.querySelector('.toggle-navbar')
 }
