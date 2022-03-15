@@ -151,10 +151,15 @@ a{
         display: none;
     }
     .menu{
-        flex-direction: row;
-        align-items: center;
-        padding-top: 25px;
-        padding-left: 25px
+      flex-direction: row;
+      align-items: center;
+      padding-left: 25px;
+      &.sticky{
+        position: fixed;
+        z-index: 3;
+        background-color: black;
+        transition: 500ms ease;
+      }
     }
     .site-logo{
         margin: 0;

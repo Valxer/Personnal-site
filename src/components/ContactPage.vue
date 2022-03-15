@@ -14,7 +14,7 @@
     items-center
   >
     <div class="color-overlay" absolute h-screen w-screen />
-    <h2 class="header z-1" flex flex-col justify-between items-center mb-50px mt-40px>
+    <h2 class="header z-1" flex flex-col justify-between items-center mb-50px mt-40px lg:mt-140px>
       <span class="header__title" relative text-fuchsia-500 text-2xl font-semibold text-center mb-30px>
         CONTACT
       </span>
