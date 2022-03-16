@@ -27,13 +27,13 @@ import { contactScroll, skills } from '~/composables'
       </h2>
       <div class="details" w-full flex flex-col justify-between items-center text-left>
         <div class="details__main w-7/10" mb-30px>
-          <h3 class="details__main-title" text-true-gray800 font-600 text-xl mb-25px>
+          <h3 class="details__main-title" text-true-gray800 font-600 text-3xl mb-25px>
             Hello !
           </h3>
-          <div class="details__main-details" text-justify text-sm>
+          <div class="details__main-details" text-justify text-md>
             <p class="details__main-details-para">
               My name is Kevin Le Van Phung and I'm a passionate <strong>Web Developer</strong>
-              with a preference towards<strong>Frontend development</strong>.
+              with a preference towards <strong>Frontend development</strong>.
             </p>
             <p class="details__main-details-para">
               I love to be up-to-date about the tools I'm using especially my preferred framework :
@@ -51,7 +51,7 @@ import { contactScroll, skills } from '~/composables'
           </div>
         </div>
         <div class="details__skills w-7/10">
-          <h3 class="details__skills-title" text-dark-700 font-600 text-xl mb-40px>
+          <h3 class="details__skills-title" text-dark-700 font-600 text-3xl mb-40px>
             My Skills
           </h3>
           <div class="skills" flex flex-wrap justify-center>

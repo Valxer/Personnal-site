@@ -40,7 +40,7 @@ import { goTo, projects } from '~/composables'
         py-25px
         sm:pr-20px
       >
-        <h3 class="card-title w-15/20" font-bold text-xl text-dark-700>
+        <h3 class="card-title w-15/20" font-bold text-3xl text-dark-700>
           {{ project.name }}
         </h3>
         <p class="card-excerpt w-15/20">
