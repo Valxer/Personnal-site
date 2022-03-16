@@ -5,7 +5,7 @@ import { goTo, projects } from '~/composables'
 </script>
 
 <template>
-  <div class="main-container" w-full flex flex-wrap flex-col xl:flex-row xl:justify-evenly items-center>
+  <div class="main-container z-1" w-full flex flex-wrap flex-col xl:flex-row xl:justify-evenly items-center>
     <div
       v-for="project in projects"
       :key="project.name"
@@ -17,9 +17,7 @@ import { goTo, projects } from '~/composables'
       text-center sm:text-left
       mb-75px
       rounded-xl
-      border-2 sm:border-0
-      border-true-gray-500
-      bg-true-gray-200
+      data-tilt
     >
       <img
         :src="project.image"
@@ -27,11 +25,9 @@ import { goTo, projects } from '~/composables'
         top-0
         left-0
         mt-25px sm:mt-0
-        sm:w-full xl
+        sm:w-full
         sm:h-full
         rounded-xl
-        border-2
-        border-true-gray-500
       >
       <div
         class="card-content"
@@ -41,8 +37,6 @@ import { goTo, projects } from '~/composables'
         justify-evenly
         items-center sm:items-end
         sm:rounded-xl
-        sm:border-2
-        border-true-gray-500
         py-25px
         sm:pr-20px
       >
@@ -53,7 +47,7 @@ import { goTo, projects } from '~/composables'
           {{ project.excerpt }}
         </p>
         <div class="skills w-15/20" flex flex-wrap justify-center sm:justify-start>
-          <div v-for="skill in project.skills" :key="skill" class="skill">
+          <div v-for="skill in project.skills" :key="skill" class="skill" text-dark>
             {{ skill }}
           </div>
         </div>
@@ -90,31 +84,37 @@ import { goTo, projects } from '~/composables'
 </template>
 
 <style scoped lang="scss">
+.card-container {
+  box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+  background: rgba(255, 255, 255, 0.6);
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+  border-left: 1px solid rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(5px);
+  &:hover .card-image {
+     @media screen and (min-width: 640px) {
+       transform: scale(0.4) translateX(-125%);
+       transition: 300ms ease-out;
+     }
+  }
+}
 .card-content {
   aspect-ratio: 16/10;
-  gap: 15px
+  gap: 15px;
 }
 .card-image {
+  box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.3);
   @media screen and (min-width: 640px) {
     position: absolute;
     transition: 300ms ease-out;
   }
 }
-.card-container:hover .card-image {
-   @media screen and (min-width: 640px) {
-     border-width: 5px;
-     transform: scale(0.4) translateX(-125%);
-     transition: 300ms ease-out;
-
-   }
-}
 .skills {
   gap: 10px;
-}
-.skill{
-    padding: 2px 10px;
-    border-radius: 5px;
-    background-color: rgb(153, 153, 153, 0.5);
+  .skill{
+      padding: 2px 10px;
+      border-radius: 5px;
+      background-color: rgb(153, 153, 153, 0.5);
+  }
 }
 .card-btn {
   transition: 300ms ease;
