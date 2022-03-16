@@ -8,6 +8,7 @@ declare module 'vue' {
     ContactPage: typeof import('./src/components/ContactPage.vue')['default']
     Footer: typeof import('./src/components/Footer.vue')['default']
     HeroPage: typeof import('./src/components/heroPage.vue')['default']
+    Loader: typeof import('./src/components/Loader.vue')['default']
     Navbar: typeof import('./src/components/Navbar.vue')['default']
     ProjectCard: typeof import('./src/components/ProjectCard.vue')['default']
     ProjectPage: typeof import('./src/components/ProjectPage.vue')['default']

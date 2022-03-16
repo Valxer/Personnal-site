@@ -3,6 +3,7 @@
 
 <template>
   <router-view />
+  <Loader />
   <Navbar />
   <HeroPage />
   <AboutPage />
