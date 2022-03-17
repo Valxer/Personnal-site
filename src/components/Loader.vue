@@ -20,7 +20,7 @@
 
 <style scoped lang="scss">
 .loader-container {
-    animation: fade-out 4s both linear;
+    animation: fade-out 2s both linear;
 }
 .ring {
     position: relative;
@@ -30,11 +30,11 @@
     border-radius: 50%;
     border: 4px solid transparent;
     border-top: 4px solid #46efd9;
-    animation: animate 2s linear infinite;
+    animation: animate 1s linear infinite;
     box-shadow: unset;
     &:nth-child(2) {
-        animation: animate2 2s linear infinite;
-        animation-delay: -1s;
+        animation: animate2 1s linear infinite;
+        animation-delay: -500ms;
         border-left: 4px solid #efd946;
         border-top: 4px solid transparent;
         &::before {
@@ -57,8 +57,8 @@
     &:nth-child(3) {
         position: absolute;
         top: -66.66px;
-        animation: animate2 2s linear infinite;
-        animation-delay: -1750ms;
+        animation: animate2 1s linear infinite;
+        animation-delay: -875ms;
         border-top: 4px solid transparent;
         border-left: 4px solid #d946ef;
         &::before {

@@ -45,7 +45,7 @@ import { contactScroll, skills } from '~/composables'
             </p>
             <p class="details__main-details-para" mt-25px>
               I would love to hear from you. Whether it's a <strong>project</strong>, <strong>job</strong>
-              opportunity,helpful <strong>criticism</strong> about my work or just a chat. Feel free to
+              opportunity, helpful <strong>criticism</strong> about my work or just a chat. Feel free to
               <strong>contact</strong> me!
             </p>
           </div>

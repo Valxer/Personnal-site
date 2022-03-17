@@ -18,7 +18,7 @@ const project1: Project = {
 }
 const project2: Project = {
   name: 'Munchkin Character Sheet',
-  excerpt: 'A personnal application used to create characters and follow their progreesion in  the Munchkin board game.',
+  excerpt: 'A personnal application used to create characters and follow their progression in  the Munchkin board game.',
   skills: ['VUE', 'HTML', 'SASS', 'Javascript', 'GIT', 'Github'],
   image: '/Munchkin.webp',
   image_small: '/Munchkin_small.webp',
