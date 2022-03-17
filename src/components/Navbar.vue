@@ -36,6 +36,7 @@ async function routerContact() {
       <button
         href="#"
         class="toggle-navbar z-3"
+        aria-label="toggle navbar button"
         fixed
         top-0
         flex
