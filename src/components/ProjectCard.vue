@@ -27,7 +27,7 @@ import { goTo, projects } from '~/composables'
         left-0
         mt-25px sm:mt-0
         sm:w-full
-        sm:h-full
+        h-full
         rounded-xl
       >
       <div
