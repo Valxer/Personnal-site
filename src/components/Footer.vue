@@ -8,7 +8,7 @@
         <h2 class="desc-title" w-full text-xl font-500>
           KEVIN LE VAN PHUNG
         </h2>
-        <p class="desc-text" w-full text-sm text-true-gray-500 mt-15px>
+        <p class="desc-text" w-full text-sm text-true-gray-400 mt-15px>
           A Frontend focused Web Developer that keeps developping his skills in order to be the Web
           Developer you need!<br>
           Contact me for any questions or remarks you might have regarding me or my work.

@@ -18,7 +18,7 @@ import { contactScroll, skills } from '~/composables'
   >
     <div class="content h-9/10" flex flex-col justify-start items-center mt-40px>
       <h2 class="header" flex flex-col justify-between items-center mb-50px lg:mt-140px>
-        <span class="header__title" relative text-fuchsia-500 text-2xl font-semibold text-center mb-30px>
+        <span class="header__title" relative text-fuchsia-600 text-2xl font-semibold text-center mb-30px>
           ABOUT ME
         </span>
         <span class="header__text w-6/10" text-sm font-600 leading-tight>
@@ -54,7 +54,7 @@ import { contactScroll, skills } from '~/composables'
           <h3 class="details__skills-title" text-dark-700 font-600 text-xl mb-40px>
             My Skills
           </h3>
-          <div class="skills" flex flex-wrap justify-center>
+          <div class="skills" flex flex-wrap justify-center text-dark800>
             <div v-for="skill in skills" :key="skill" class="skills__skill">
               {{ skill }}
             </div>
