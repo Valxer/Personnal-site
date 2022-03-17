@@ -115,6 +115,8 @@ import { goTo, projects } from '~/composables'
 }
 .card-image {
   box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.3);
+  object-fit: cover;
+  object-position: left top;
   @media screen and (min-width: 640px) {
     position: absolute;
     transition: 300ms ease-out;
