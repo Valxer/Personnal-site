@@ -87,6 +87,7 @@ $box-wrapper-margin: calc((100% - #{$b-size})/2) calc((100% - #{$b-size})/2);
         position: absolute;
         font-size: 2rem;
         bottom: -100px;
+        color: white;
         left: calc(50% - 5ch)
     }
 }
