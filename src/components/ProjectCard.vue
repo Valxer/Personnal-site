@@ -21,6 +21,7 @@ import { goTo, projects } from '~/composables'
     >
       <img
         :src="project.image"
+        :alt="project.name"
         class="card-image w-9/10"
         top-0
         left-0
@@ -90,7 +91,7 @@ import { goTo, projects } from '~/composables'
   border-top: 1px solid rgba(255, 255, 255, 0.5);
   border-left: 1px solid rgba(255, 255, 255, 0.5);
   backdrop-filter: blur(5px);
-  &:hover .card-image {
+  &:hover .card-image, &:focus .card-image {
      @media screen and (min-width: 640px) {
        transform: scale(0.4) translateX(-125%);
        transition: 300ms ease-out;
@@ -118,7 +119,7 @@ import { goTo, projects } from '~/composables'
 }
 .card-btn {
   transition: 300ms ease;
-  &:hover {
+  &:hover, &:focus {
     transform: scale(1.1);
     transition: 300ms ease;
   }

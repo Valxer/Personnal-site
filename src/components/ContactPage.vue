@@ -134,6 +134,7 @@
         }
         &:focus, &:focus-visible, &:not(:placeholder-shown) {
             outline: 0;
+            border: 1px solid #D946EF;
             & + .placeholder{
                 top : -14px;
                 left: 0px;
@@ -167,7 +168,7 @@ button {
         background-color: rgba(0,0,0,0.7);
         backdrop-filter: blur(8px);
         transition: 300ms ease;
-        &:hover {
+        &:hover, &:focus {
           transform: scale(1.2);
           color: rgb(217,70,239);
           transition: 300ms ease;

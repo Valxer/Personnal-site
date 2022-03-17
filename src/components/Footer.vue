@@ -68,7 +68,7 @@ a {
       font-size: 0.9rem;
     }
   }
-  &:hover {
+  &:hover, &:focus {
     transform: scale(1.2);
     transition: 300ms;
   }

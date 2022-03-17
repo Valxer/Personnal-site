@@ -106,7 +106,7 @@ import { contactScroll, skills } from '~/composables'
 }
 .contact-btn {
   transition: 300ms ease;
-  &:hover {
+  &:hover, &:focus {
     transform: scale(1.3);
     transition: 300ms ease;
   }

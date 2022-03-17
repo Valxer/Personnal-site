@@ -88,7 +88,7 @@ function routerContact() {
     top: 2.5rem;
     right: 25px;
     transition: 300ms ease;
-    &:hover {
+    &:hover, &:focus {
       transform: scale(1.3);
       transition: 300ms ease;
     }
@@ -140,7 +140,7 @@ a{
   margin-bottom: 3px;
   cursor: pointer;
   transition: transform 300ms ease, color 300ms ease, font-weight 300ms ease;
-  &:hover {
+  &:hover, &:focus {
     transform: scale(1.5) translateX(5px);
     color: rgb(217,70,239);
     transition: transform 300ms ease, color 300ms ease;
