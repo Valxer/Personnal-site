@@ -26,7 +26,7 @@ $b-size: 30vmin;
 $box-wrapper-margin: calc((100% - #{$b-size})/2) calc((100% - #{$b-size})/2);
 
 .loader-container {
-    animation: fade-out 3s both linear;
+    animation: fade-out 2.5s both linear;
 }
 .box-wrap {
     position: relative;
