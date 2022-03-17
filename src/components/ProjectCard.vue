@@ -5,7 +5,7 @@ import { goTo, projects } from '~/composables'
 </script>
 
 <template>
-  <div class="main-container z-1" w-full flex flex-wrap flex-col xl:flex-row xl:justify-evenly items-center>
+  <div class="main-container z-1" w-full flex flex-wrap flex-col xl:flex-row xl:justify-evenly items-center mb-50px>
     <div
       v-for="project in projects"
       :key="project.name"
@@ -21,6 +21,7 @@ import { goTo, projects } from '~/composables'
     >
       <img
         :src="project.image"
+        :alt="project.name"
         class="card-image w-9/10"
         top-0
         left-0
@@ -40,13 +41,13 @@ import { goTo, projects } from '~/composables'
         py-25px
         sm:pr-20px
       >
-        <h3 class="card-title w-15/20" font-bold text-3xl text-dark-700>
+        <h3 class="card-title w-17/20 sm:w-15/20" font-bold text-xl text-dark-700>
           {{ project.name }}
         </h3>
-        <p class="card-excerpt w-15/20">
+        <p class="card-excerpt w-17/20 sm:w-15/20">
           {{ project.excerpt }}
         </p>
-        <div class="skills w-15/20" flex flex-wrap justify-center sm:justify-start>
+        <div class="skills w-17/20 sm:w-15/20" flex flex-wrap justify-center sm:justify-start>
           <div v-for="skill in project.skills" :key="skill" class="skill" text-dark>
             {{ skill }}
           </div>
@@ -55,10 +56,9 @@ import { goTo, projects } from '~/composables'
           <button
             v-show="project.livelink"
             class="card-btn"
-            mr-20px
             px-10px sm:px-15px
             py-5px
-            border-2
+            border-3
             border-fuchsia600
             font-semibold
             @click="goTo(project.livelink)"
@@ -68,9 +68,10 @@ import { goTo, projects } from '~/composables'
           <button
             v-show="project.link"
             class="card-btn"
+            ml-20px
             px-15px
             py-5px
-            border-2
+            border-3
             border-fuchsia600
             font-semibold
             @click="goTo(project.link)"
@@ -90,7 +91,7 @@ import { goTo, projects } from '~/composables'
   border-top: 1px solid rgba(255, 255, 255, 0.5);
   border-left: 1px solid rgba(255, 255, 255, 0.5);
   backdrop-filter: blur(5px);
-  &:hover .card-image {
+  &:hover .card-image, &:focus .card-image {
      @media screen and (min-width: 640px) {
        transform: scale(0.4) translateX(-125%);
        transition: 300ms ease-out;
@@ -118,9 +119,19 @@ import { goTo, projects } from '~/composables'
 }
 .card-btn {
   transition: 300ms ease;
-  &:hover {
+  &:hover, &:focus {
     transform: scale(1.1);
     transition: 300ms ease;
   }
 }
+@media screen and (max-width: 475px) {
+    .btn-container {
+      width: 50%;
+      flex-direction: column;
+      gap: 10px;
+      .card-btn {
+        margin-left: 0;
+      }
+    }
+  }
 </style>

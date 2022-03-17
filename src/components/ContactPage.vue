@@ -15,10 +15,10 @@
   >
     <div class="color-overlay" absolute h-screen w-screen />
     <h2 class="header z-1" flex flex-col justify-between items-center mb-50px mt-40px lg:mt-140px>
-      <span class="header__title" relative text-fuchsia-500 text-2xl font-semibold text-center mb-30px>
+      <span class="header__title" relative text-fuchsia-600 text-2xl font-semibold text-center mb-30px>
         CONTACT
       </span>
-      <span class="header__text w-6/10" text-sm font-600 leading-tight text-true-gray500>
+      <span class="header__text w-6/10" text-md font-600 leading-tight text-true-gray400>
         Submit the form below so I can get back to you as soon as possible
       </span>
     </h2>
@@ -58,7 +58,7 @@
           type="submit"
           px-25px sm:px-30px
           py-10px sm:py-15px
-          border-1
+          border-3
           border-fuchsia600
           text-lg sm:text-xl
           mt-30px
@@ -66,22 +66,22 @@
           Send Message
         </button>
       </form>
-      <div class="contact-infos" w-160px h-250px mt-30px flex flex-col justify-evenly items-center>
+      <div class="contact-infos" w-165px h-250px mt-30px flex flex-col justify-evenly items-center>
         <h3 w-full h-50px flex flex-col items-start>
           <p>PHONE</p>
-          <p text-sm font-600 text-true-gray500>
+          <p text-sm font-600 text-true-gray400>
             Mobile: (+33)687408418
           </p>
         </h3>
         <h3 w-full h-50px flex flex-col items-start>
           <p>EMAIL</p>
-          <p text-sm font-600 text-true-gray500>
+          <p text-sm font-600 text-true-gray400>
             levanphungk@gmail.com
           </p>
         </h3>
         <h3 w-full h-50px flex flex-col items-start>
           <p>GITHUB</p>
-          <p text-sm font-600 text-true-gray500>
+          <p text-sm font-600 text-true-gray400>
             <a href="https://github.com/Valxer" target="_blank">github.com/Valxer</a>
           </p>
         </h3>
@@ -97,11 +97,11 @@
   color: white;
   background-image: url("/LandingBackground.jpg");
   background-size: cover;
-  box-shadow: 0px -5px 10px #737373;
+  box-shadow: 0px 0px 30px #000;
 }
 .color-overlay {
   background: rgb(0,0,0);
-  background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 5%, rgba(0,0,0,0) 100%);
+  background: linear-gradient(180deg, rgb(10, 10, 10, 1) 0%, rgba(10, 10, 10, 1) 5%, rgba(10, 10, 10, 0) 100%);
 }
 .header__title::after {
     content: '';
@@ -134,6 +134,7 @@
         }
         &:focus, &:focus-visible, &:not(:placeholder-shown) {
             outline: 0;
+            border: 1px solid #D946EF;
             & + .placeholder{
                 top : -14px;
                 left: 0px;
@@ -146,7 +147,7 @@
         position: absolute;
         left: 12px;
         top: 2.5px;
-        color: #737373;
+        color: #A3A3A3;
         transition: top 300ms ease, left 300ms ease, color 300ms ease, font-size 300ms ease;
     }
     .error-message {
@@ -167,7 +168,7 @@ button {
         background-color: rgba(0,0,0,0.7);
         backdrop-filter: blur(8px);
         transition: 300ms ease;
-        &:hover {
+        &:hover, &:focus {
           transform: scale(1.2);
           color: rgb(217,70,239);
           transition: 300ms ease;

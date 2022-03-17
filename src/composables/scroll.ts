@@ -26,6 +26,6 @@ export function navColorChange() {
     menu?.classList.remove('sticky')
 }
 
-window.addEventListener('load', definePageHeights)
+window.addEventListener('scroll', definePageHeights)
 window.addEventListener('resize', definePageHeights)
 window.addEventListener('scroll', navColorChange, false)

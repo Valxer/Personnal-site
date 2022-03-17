@@ -5,7 +5,7 @@ import { aboutScroll } from '~/composables'
 </script>
 
 <template>
-  <div class="scroll" absolute bottom-2 flex flex-col items-center @click="aboutScroll">
+  <div class="scroll" absolute bottom-2 flex flex-col items-center tabindex="0" @keydown.enter="aboutScroll" @click="aboutScroll">
     <p class="scroll-text" text-lg>
       SCROLL DOWN
     </p>
@@ -19,7 +19,7 @@ import { aboutScroll } from '~/composables'
   @media screen and (max-width: 1024px) {
     display: none;
   }
-  &:hover {
+  &:hover, &:focus {
       cursor: pointer;
       transform: scale(1.3);
       transition: 300ms ease;

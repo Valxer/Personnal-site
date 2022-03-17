@@ -1,5 +1,6 @@
 <script setup lang="ts">
 
+import { aboutScroll, contactScroll, homeScroll, projectScroll } from '~/composables'
 const router = useRouter()
 
 function toggleNavBar() {
@@ -9,21 +10,21 @@ function toggleNavBar() {
   toggle?.classList.toggle('active')
 }
 
-function routerHome() {
-  toggleNavBar()
-  router.push('/')
+async function routerHome() {
+  await router.push('/')
+  homeScroll()
 }
-function routerAbout() {
-  toggleNavBar()
-  router.push('/#about-section')
+async function routerAbout() {
+  await router.push('/#about-section')
+  aboutScroll()
 }
-function routerProjects() {
-  toggleNavBar()
-  router.push('/#project-section')
+async function routerProjects() {
+  await router.push('/#project-section')
+  projectScroll()
 }
-function routerContact() {
-  toggleNavBar()
-  router.push('/#contact-section')
+async function routerContact() {
+  await router.push('/#contact-section')
+  contactScroll()
 }
 
 </script>
@@ -62,18 +63,18 @@ function routerContact() {
           pt-100px
           mr-25px
         >
-          <a href="#" @click="routerHome">
-            <li>HOME</li>
-          </a>
-          <a href="#about-section" @click="routerAbout">
-            <li>ABOUT</li>
-          </a>
-          <a href="#project-section" @click="routerProjects">
-            <li>PROJECTS</li>
-          </a>
-          <a href="#contact-section" @click="routerContact">
-            <li>CONTACT</li>
-          </a>
+          <li @click="routerHome">
+            HOME
+          </li>
+          <li @click="routerAbout">
+            ABOUT
+          </li>
+          <li @click="routerProjects">
+            PROJECTS
+          </li>
+          <li @click="routerContact">
+            CONTACT
+          </li>
         </ul>
       </nav>
     </div>
@@ -92,7 +93,7 @@ function routerContact() {
     top: 2.5rem;
     right: 25px;
     transition: 300ms ease;
-    &:hover {
+    &:hover, &:focus {
       transform: scale(1.3);
       transition: 300ms ease;
     }
@@ -136,7 +137,7 @@ function routerContact() {
       }
     }
 }
-a{
+li {
   padding: 15px 25px;
   display: flex;
   justify-content: center;
@@ -144,7 +145,7 @@ a{
   margin-bottom: 3px;
   cursor: pointer;
   transition: transform 300ms ease, color 300ms ease, font-weight 300ms ease;
-  &:hover {
+  &:hover, &:focus {
     transform: scale(1.5) translateX(5px);
     color: rgb(217,70,239);
     transition: transform 300ms ease, color 300ms ease;

@@ -115,7 +115,7 @@ import { aboutScroll, projectScroll } from '~/composables'
   }
 }
 button {
-  border: 2px solid rgb(192, 38, 211);
+  border: 3px solid rgb(192, 38, 211);
   width : 175px;
   padding-top: 5px;
   padding-bottom: 5px;
@@ -125,11 +125,11 @@ button {
     padding-top: 10px;
     padding-bottom: 10px;
   }
-  &.project-btn:hover {
+  &.project-btn:hover, &.project-btn:focus {
     transform: translateY(-5px) scale(1.2);
     transition: 300ms ease;
   }
-  &.about-btn:hover {
+  &.about-btn:hover,  &.about-btn:focus {
     transform: translateY(5px) scale(1.2);
     transition: 300ms ease;
   }
