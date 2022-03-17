@@ -22,7 +22,18 @@ import { goTo, projects } from '~/composables'
       <img
         :src="project.image"
         :alt="project.name"
-        class="card-image w-9/10"
+        class="card-image big-img w-9/10"
+        top-0
+        left-0
+        mt-25px sm:mt-0
+        sm:w-full
+        h-full
+        rounded-xl
+      >
+      <img
+        :src="project.image_small"
+        :alt="project.name"
+        class="card-image small-img w-9/10"
         top-0
         left-0
         mt-25px sm:mt-0
@@ -107,6 +118,18 @@ import { goTo, projects } from '~/composables'
   @media screen and (min-width: 640px) {
     position: absolute;
     transition: 300ms ease-out;
+  }
+}
+.big-img {
+  display: none;
+}
+
+@media (min-width:640px) {
+  .small-img {
+    display: none;
+  }
+  .big-img {
+    display: block !important;
   }
 }
 .skills {
