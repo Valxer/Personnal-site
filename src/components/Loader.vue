@@ -82,10 +82,12 @@ $box-wrapper-margin: calc((100% - #{$b-size})/2) calc((100% - #{$b-size})/2);
         }
     }
     p {
+        width: 10ch;
+        text-align: center;
         position: absolute;
         font-size: 2rem;
-        bottom: -30%;
-        left: calc(50% - 3ch)
+        bottom: -100px;
+        left: calc(50% - 5ch)
     }
 }
 
