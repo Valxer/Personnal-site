@@ -67,7 +67,7 @@ import { contactScroll, skills } from '~/composables'
         mb-75px
         px-15px sm:px-30px
         py-5px sm:py-10px
-        border-2
+        border-3
         border-fuchsia600
         text-dark-700
         text-lg sm:text-2xl

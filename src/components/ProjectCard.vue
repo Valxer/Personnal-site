@@ -40,13 +40,13 @@ import { goTo, projects } from '~/composables'
         py-25px
         sm:pr-20px
       >
-        <h3 class="card-title w-15/20" font-bold text-xl text-dark-700>
+        <h3 class="card-title w-17/20 sm:w-15/20" font-bold text-xl text-dark-700>
           {{ project.name }}
         </h3>
-        <p class="card-excerpt w-15/20">
+        <p class="card-excerpt w-17/20 sm:w-15/20">
           {{ project.excerpt }}
         </p>
-        <div class="skills w-15/20" flex flex-wrap justify-center sm:justify-start>
+        <div class="skills w-17/20 sm:w-15/20" flex flex-wrap justify-center sm:justify-start>
           <div v-for="skill in project.skills" :key="skill" class="skill" text-dark>
             {{ skill }}
           </div>
@@ -55,10 +55,9 @@ import { goTo, projects } from '~/composables'
           <button
             v-show="project.livelink"
             class="card-btn"
-            mr-20px
             px-10px sm:px-15px
             py-5px
-            border-2
+            border-3
             border-fuchsia600
             font-semibold
             @click="goTo(project.livelink)"
@@ -68,9 +67,10 @@ import { goTo, projects } from '~/composables'
           <button
             v-show="project.link"
             class="card-btn"
+            ml-20px
             px-15px
             py-5px
-            border-2
+            border-3
             border-fuchsia600
             font-semibold
             @click="goTo(project.link)"
@@ -123,4 +123,14 @@ import { goTo, projects } from '~/composables'
     transition: 300ms ease;
   }
 }
+@media screen and (max-width: 475px) {
+    .btn-container {
+      width: 50%;
+      flex-direction: column;
+      gap: 10px;
+      .card-btn {
+        margin-left: 0;
+      }
+    }
+  }
 </style>

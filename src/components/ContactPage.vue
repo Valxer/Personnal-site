@@ -58,7 +58,7 @@
           type="submit"
           px-25px sm:px-30px
           py-10px sm:py-15px
-          border-1
+          border-3
           border-fuchsia600
           text-lg sm:text-xl
           mt-30px
