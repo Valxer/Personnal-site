@@ -1,5 +1,6 @@
 <script setup lang="ts">
 
+import { aboutScroll, contactScroll, homeScroll, projectScroll } from '~/composables'
 const router = useRouter()
 
 function toggleNavBar() {
@@ -9,17 +10,21 @@ function toggleNavBar() {
   toggle?.classList.toggle('active')
 }
 
-function routerHome() {
-  router.push('/')
+async function routerHome() {
+  await router.push('/')
+  homeScroll()
 }
-function routerAbout() {
-  router.push('/#about-section')
+async function routerAbout() {
+  await router.push('/#about-section')
+  aboutScroll()
 }
-function routerProjects() {
-  router.push('/#project-section')
+async function routerProjects() {
+  await router.push('/#project-section')
+  projectScroll()
 }
-function routerContact() {
-  router.push('/#contact-section')
+async function routerContact() {
+  await router.push('/#contact-section')
+  contactScroll()
 }
 
 </script>
@@ -58,18 +63,18 @@ function routerContact() {
           pt-100px
           mr-25px
         >
-          <a href="#" @click="routerHome">
-            <li>HOME</li>
-          </a>
-          <a href="#about-section" @click="routerAbout">
-            <li>ABOUT</li>
-          </a>
-          <a href="#project-section" @click="routerProjects">
-            <li>PROJECTS</li>
-          </a>
-          <a href="#contact-section" @click="routerContact">
-            <li>CONTACT</li>
-          </a>
+          <li @click="routerHome">
+            HOME
+          </li>
+          <li @click="routerAbout">
+            ABOUT
+          </li>
+          <li @click="routerProjects">
+            PROJECTS
+          </li>
+          <li @click="routerContact">
+            CONTACT
+          </li>
         </ul>
       </nav>
     </div>
@@ -132,7 +137,7 @@ function routerContact() {
       }
     }
 }
-a{
+li {
   padding: 15px 25px;
   display: flex;
   justify-content: center;

@@ -5,7 +5,7 @@ import { goTo, projects } from '~/composables'
 </script>
 
 <template>
-  <div class="main-container z-1" w-full flex flex-wrap flex-col xl:flex-row xl:justify-evenly items-center>
+  <div class="main-container z-1" w-full flex flex-wrap flex-col xl:flex-row xl:justify-evenly items-center mb-50px>
     <div
       v-for="project in projects"
       :key="project.name"

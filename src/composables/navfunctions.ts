@@ -1,3 +1,8 @@
+export function homeScroll() {
+  const home = document.querySelector('.hero-section')
+  home?.scrollIntoView()
+}
+
 export function aboutScroll() {
   const about = document.querySelector('.about-section')
   about?.scrollIntoView()
