@@ -43,9 +43,19 @@ const project4: Project = {
   livelink: 'https://valxer.github.io/RESERVIA__OpenClassrooms-Projet-2/',
   link: 'https://github.com/Valxer/RESERVIA__OpenClassrooms-Projet-2',
 }
+const project5: Project = {
+  name: 'Three.js Playground',
+  excerpt: 'I created a project in the sole purpose of playing with three.js and understanding its basics. I also used dat.GUI to dynamically change different settings of the 3d object and gsap to dynamically animate a light',
+  image: '/Threejs.webp',
+  image_small: '/Threejs_small.webp',
+  skills: ['VUE', 'Three.js', 'dat.GUI', 'gsap', 'Javascript', 'HTML', 'SASS', 'GIT', 'Github'],
+  livelink: 'https://three-js-playground.netlify.app/',
+  link: 'https://github.com/Valxer/Three.js-Playground',
+}
 
 export const projects: Project[] = []
 projects.push(project1)
 projects.push(project2)
 projects.push(project3)
 projects.push(project4)
+projects.push(project5)
