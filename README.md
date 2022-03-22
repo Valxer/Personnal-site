@@ -20,7 +20,7 @@ A website fully developpede to display my skills and promote my projects to pote
 + Vanilla-tilt.js for the project moving cards
 
 ## Access
-The website is accessible at : https://levanphungk.com
+The website is accessible by [`clicking here`](https://levanphungk.com) or at https://levanphungk.com
 
 ## Getting the app without the website
 1. Clone the repository with ``git clone https://github.com/Valxer/Personnal-site.git``
