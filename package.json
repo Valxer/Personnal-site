@@ -4,8 +4,7 @@
     "dev": "vite --port 3333 --open",
     "build": "vite build",
     "preview": "vite preview",
-    "lint": "eslint . --ext=.ts,.vue",
-    "test": "vitest"
+    "lint": "eslint . --ext=.ts,.vue"
   },
   "dependencies": {
     "@vueuse/core": "^7.7.0",
