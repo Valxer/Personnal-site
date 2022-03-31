@@ -14,7 +14,8 @@ const project1: Project = {
   skills: ['VUE', 'HTML', 'SASS', 'Typescript', 'WindiCSS', 'GIT', 'Github'],
   image: '/Website.webp',
   image_small: '/Website_small.webp',
-  livelink: 'https://levanphungk.com/',
+  link: 'https://github.com/Valxer/Personnal-site',
+  livelink: 'hhtps://levanphungk.com/',
 }
 const project2: Project = {
   name: 'Munchkin Character Sheet',
